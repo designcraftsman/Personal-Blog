@@ -1,0 +1,28 @@
+.Posts{
+    display:grid;
+    grid-template:repeat(4,1fr)/repeat(4,1fr);
+    grid-template-areas: 
+    "h h a a"
+    "h h a a"
+    "h h b b"
+    "h h b b"
+    ;
+    &__Post1{
+        grid-area: h;
+        img{
+            width: 50;
+        }
+    }
+    &__Post2{
+        grid-area: a;
+        img{
+            width:25px;
+        }
+    }
+    &__Post3{
+        grid-area: b;
+        img{
+            width:25px;
+        }
+    }
+}

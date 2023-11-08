@@ -1,23 +1,20 @@
-.body {
-    padding: 0;
-    margin: 0;
-}
-
 .navbar {
-    background-color: #E86900;
+    background-color: $theme;
     color: $text;
-    margin: -8px;
+    width:100%;
+    right: 0;
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
+    width: 100%;
     &__logo {
         margin: 20px;
         font-size: 40px;
         padding: 15px;
         &__style {
-            color: $theme;
+            color: $style;
         }
     }  
     &__nav {
@@ -31,13 +28,16 @@
                 color: $text;
                 font-size: 18px;
                 padding: 15px;
+                &:hover{
+                    color:$style;
+                }
             }
         }
     }
     &__search {
-        margin: 20px;
+        padding: 20px;
         i {
-            color: $theme;
+            color: $style;
             padding: 15px;
         }
     }
