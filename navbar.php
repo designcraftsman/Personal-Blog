@@ -1,5 +1,5 @@
  <div class="navbar">
-    <h1 class="navbar__logo">Ali<span class="navbar__logo__style">ce</span></h1>
+    <h1 class="navbar__logo"><span class="navbar__logo__style">ALI</span>CE</h1>
     <nav >
         <ul class="navbar__nav">
             <li class="navbar__nav__link"><a href="#">Home</a></li>
