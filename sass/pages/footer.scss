@@ -1,0 +1,33 @@
+#footer{
+    background-color: #142746;
+    margin-top: 50px;
+}
+.footer{
+    font-family: 'Playfair Display', serif;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color: $text;
+    padding: 20px;
+    flex-flow: row;
+    &__brand{
+        font-size:30px;
+        font-weight: bolder;
+        &__style{
+            color:$style;
+        }
+    }
+    &__socials{
+        &__title{
+            text-align: center;
+        }
+     ul{
+         list-style: none;
+         li{
+            margin: 0px;
+            display:inline;
+            padding: 20px;
+        }
+    }
+}
+}

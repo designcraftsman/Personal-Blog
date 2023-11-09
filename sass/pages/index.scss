@@ -122,3 +122,51 @@
         }
     }
 }
+
+#newsLetter{
+    display:flex;
+    justify-content: center;
+}
+.newsLetter{
+    background-color: $style;
+    padding: 30px;
+    display: flex;
+    border-radius: 30px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Playfair Display', serif;
+    color:$text;
+    &__text1{
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+    }
+    &__text2{
+        font-weight: lighter;
+    }
+    &__form {
+        &__input{
+            width: 300px;
+            height: 50px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 5px;
+            padding-left: 15px;
+            font-size: 18px;
+        }
+        &__btn{
+            position: relative;
+            right: 7px;
+            background-color:$theme;
+            font-size:18px;
+            font-weight: bolder;
+            width: 150px;
+            top:1px;
+            height: 66px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
