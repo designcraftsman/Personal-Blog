@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .navbar {
   background-color: #f5701d;
@@ -73,7 +74,7 @@
   position: relative;
   bottom: 150px;
   left: 20px;
-  color: #5B7C99;
+  color: white;
   max-width: 90%;
 }
 .container__rightTop img {
@@ -86,7 +87,7 @@
   position: relative;
   bottom: 150px;
   left: 20px;
-  color: #5B7C99;
+  color: white;
   max-width: 90%;
 }
 .container__rightBottom img {
@@ -99,7 +100,7 @@
   position: relative;
   bottom: 150px;
   left: 20px;
-  color: #5B7C99;
+  color: white;
   max-width: 90%;
 }
 
