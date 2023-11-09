@@ -44,6 +44,24 @@
   padding: 15px;
 }
 
+#home {
+  background-color: #CFF8EF;
+  height: 100vh;
+}
+
+#home.container {
+  display: grid;
+}
+#home.container__left {
+  background-color: red;
+}
+#home.container__right__top {
+  background-color: blue;
+}
+#home.container__right__bottom {
+  background-color: orangered;
+}
+
 body {
   padding: 0;
   margin: 0;

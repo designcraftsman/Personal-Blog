@@ -10,21 +10,19 @@
 <body>
 <?php include('navbar.php'); ?>
 <section id="home">
-    <div class="Posts">
-        <div class="Posts__post1">
-            <img src="https://images.pexels.com/photos/18596173/pexels-photo-18596173/free-photo-of-mode-femme-jardin-etre-assis.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  alt="something">
-            <h2>Title</h2>
+    <div class="container">
+        <div class="container__left">
+            1
         </div>
-        <div class="Posts__post2">
-            <img src="https://images.pexels.com/photos/15836393/pexels-photo-15836393/free-photo-of-tasse-feuilles-a-feuilles-persistantes-decore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="something">
-            <h2>Title</h2>
-        </div>
-        <div class="Posts__post3">
-            <img src="https://images.pexels.com/photos/15836393/pexels-photo-15836393/free-photo-of-tasse-feuilles-a-feuilles-persistantes-decore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="something">
-            <h2>Title</h2>
+        <div class="container__right">
+            <div class="container__right__top">
+                2
+            </div>
+            <div class="container__right__bottom">
+                3
+            </div>
         </div>
     </div>
-
 </section>
 </body>
 </html>
