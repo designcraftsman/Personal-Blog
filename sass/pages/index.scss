@@ -80,6 +80,23 @@
         border-radius: 5px;
         border-left: 5px solid $style;
     }
+    &__categories{
+        list-style: none;
+        margin-top: 50px;
+        &__categorie{
+            color:gray;
+            font-size: 20px;
+            text-decoration: none;
+            padding:15px;
+            width: 100px;
+            border-radius: 10px;
+            display: inline;
+            margin: 20px;
+        }
+        &__categorie.active{
+            background-color: $style;
+        }
+    }
     &__Posts{
         margin-top: 40px;
         display:flex;
@@ -98,6 +115,9 @@
                 border-top-left-radius: 10px;
                 width:100%;
                 height:100%;
+            }
+            h3{
+                padding: 5px;
             }
         }
     }

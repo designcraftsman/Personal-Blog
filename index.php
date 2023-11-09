@@ -29,6 +29,12 @@
 <section id="newsLetter">
     <div class="trendingPosts">
         <h2 class="trendingPosts__title">TRENDING POSTS</h2>
+        <ul class="trendingPosts__categories">
+            <li class="trendingPosts__categories__categorie active">All</li>
+            <li class="trendingPosts__categories__categorie ">Sport</li>
+            <li class="trendingPosts__categories__categorie">Lifestyle</li>
+            <li class="trendingPosts__categories__categorie">Beauty</li>
+        </ul>
         <div class="trendingPosts__Posts">
             <div class="trendingPosts__Posts__post">
                 <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
