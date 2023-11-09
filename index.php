@@ -12,15 +12,16 @@
 <section id="home">
     <div class="container">
         <div class="container__left">
-            1
+            <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2 class="container__left__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
         </div>
-        <div class="container__right">
-            <div class="container__right__top">
-                2
-            </div>
-            <div class="container__right__bottom">
-                3
-            </div>
+        <div class="container__rightTop">
+            <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2 class="container__rightTop__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
+        </div>
+        <div class="container__rightBottom">
+            <img src="https://images.pexels.com/photos/106686/pexels-photo-106686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2 class="container__rightBottom__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
         </div>
     </div>
 </section>

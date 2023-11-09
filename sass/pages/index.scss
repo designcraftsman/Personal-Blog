@@ -2,17 +2,62 @@
     background-color:$text;
     height: 100vh;
 }
-#home.container{
+.container {
     display: grid;
-    &__left{
-        background-color: red;
-    }
-    &__right{
-        &__top{
-            background-color: blue;
+    padding: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:40vh 40vh ;
+    grid-gap: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    &__left {
+        grid-row: span 2;
+        background-image: cover;
+        max-height: 100%;
+        img{
+            width: 100%; 
+            border-radius: 10px;
+            height: 100%; 
+            object-fit: cover;
         }
-        &__bottom{
-            background-color: orangered;
+        &__title{
+            position:relative;
+            bottom: 150px;
+            left: 20px;
+            color: #5B7C99;
+            max-width: 90%;
+        }
+    }
+
+    &__rightTop {
+        img{
+            width: 100%; 
+            border-radius: 10px;
+            height: 100%; 
+            object-fit: cover;
+        }
+        &__title{
+            position:relative;
+            bottom: 150px;
+            left: 20px;
+            color: #5B7C99;
+            max-width: 90%;
+        }
+    }
+
+    &__rightBottom {
+        img{
+            width: 100%; 
+            border-radius: 10px;
+            height: 100%; 
+            object-fit: cover;
+        }
+        &__title{
+            position:relative;
+            bottom: 150px;
+            left: 20px;
+            color: #5B7C99;
+            max-width: 90%;
         }
     }
 }
