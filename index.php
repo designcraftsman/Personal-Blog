@@ -66,5 +66,11 @@
         </div>
     </div>
 </section>
+
+<section id="categories">
+    <div class="categories">
+        
+    </div>
+</section>
 </body>
 </html>
