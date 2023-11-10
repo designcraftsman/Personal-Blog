@@ -9,14 +9,7 @@
     justify-content: space-around;
     color: $text;
     padding: 20px;
-    flex-flow: row;
-    &__brand{
-        font-size:30px;
-        font-weight: bolder;
-        &__style{
-            color:$style;
-        }
-    }
+    flex-flow: row wrap;
     &__socials{
         &__title{
             text-align: center;
@@ -29,5 +22,8 @@
             padding: 20px;
         }
     }
-}
+    }
+    &__about{
+        text-align: center;
+    }
 }

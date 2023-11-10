@@ -219,14 +219,7 @@
   justify-content: space-around;
   color: #CFF8EF;
   padding: 20px;
-  flex-flow: row;
-}
-.footer__brand {
-  font-size: 30px;
-  font-weight: bolder;
-}
-.footer__brand__style {
-  color: rgb(112, 5, 5);
+  flex-flow: row wrap;
 }
 .footer__socials__title {
   text-align: center;
@@ -238,6 +231,9 @@
   margin: 0px;
   display: inline;
   padding: 20px;
+}
+.footer__about {
+  text-align: center;
 }
 
 body {
