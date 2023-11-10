@@ -1,45 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-.navbar {
+.navContainer {
   background-color: #7094b4;
   color: #CFF8EF;
   width: 100%;
   font-family: "Playfair Display", serif;
+}
+.navContainer__navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row;
   width: 100%;
+  max-height: 80px;
 }
-.navbar__logo {
+.navContainer__navbar__logo {
   font-size: 40px;
+  margin-left: 30px;
+  letter-spacing: 4px;
 }
-.navbar__logo__style {
+.navContainer__navbar__logo__style {
   color: rgb(112, 5, 5);
 }
-.navbar__nav {
+.navContainer__navbar__search {
+  margin-right: 40px;
+}
+.navContainer__navbar__search__input {
+  font-size: 18px;
+  margin: 5px;
+}
+.navContainer__navbar__search i {
+  color: #CFF8EF;
+}
+.navContainer__nav {
   list-style: none;
   margin: 0;
+  text-align: center;
+  padding: 5px;
 }
-.navbar__nav__link {
+.navContainer__nav__link {
   display: inline;
   margin: 0;
 }
-.navbar__nav__link a {
+.navContainer__nav__link a {
+  padding: 0px 30px;
   text-decoration: none;
   color: #CFF8EF;
   font-size: 18px;
-  padding: 15px;
 }
-.navbar__nav__link a:hover {
+.navContainer__nav__link a:hover {
   color: rgb(112, 5, 5);
-}
-.navbar__search {
-  padding: 20px;
-}
-.navbar__search i {
-  color: #CFF8EF;
-  padding: 15px;
 }
 
 #home {
@@ -55,6 +65,7 @@
   grid-gap: 15px;
   font-family: "Playfair Display", serif;
   font-weight: bolder;
+  padding: 20px 100px;
 }
 .container__left {
   grid-row: span 2;

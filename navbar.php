@@ -1,15 +1,20 @@
- <div class="navbar">
-    <h1 class="navbar__logo"><span class="navbar__logo__style">ALI</span>CE</h1>
-    <nav >
-        <ul class="navbar__nav">
-            <li class="navbar__nav__link"><a href="#">Home</a></li>
-            <li class="navbar__nav__link"><a href="#">Blog</a></li>
-            <li class="navbar__nav__link"><a href="#">Categories</a></li>
-            <li class="navbar__nav__link"><a href="#">Contact</a></li>
-            <li class="navbar__nav__link"><a href="#">About</a></li>
+ <div class="navContainer">
+    <div class="navContainer__navbar">
+        <h1 class="navContainer__navbar__logo"><span class="navContainer__navbar__logo__style">ALI</span>CE</h1>
+        <div class="navContainer__navbar__search">
+            <span class="navContainer__navbar__search__input">Search</span>
+            <i class="fa-solid fa-magnifying-glass fa"></i>
+        </div>
+    </div>
+    <hr>
+    <nav class="navContainer__nav">
+        <ul>
+            <li class="navContainer__nav__link"><a href="">HOME</a></li>
+            <li class="navContainer__nav__link"><a href="">BLOG</a></li>
+            <li class="navContainer__nav__link"><a href="">CATEGORIES</a></li>
+            <li class="navContainer__nav__link"><a href="">CONTACT</a></li>
+            <li class="navContainer__nav__link"><a href="">ABOUT</a></li>
         </ul>
     </nav>
-    <div class="navbar__search">
-    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-    </div>
- </div>
+    <hr>
+</div>
