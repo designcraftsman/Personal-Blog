@@ -26,6 +26,18 @@
     </div>
 </section>
 
+<section id="newsLetter">
+    <div class="newsLetter">
+        <h2 class="newsLetter__text1"><span><i class="fa-solid fa-paper-plane fa-bounce fa newsLetter__icon"></i></span>  Join Our Newsletter</h2>
+        <h3 class="newsLetter__text2">Dive into Alice for Your Weekly Dose of Creativity !</h3>
+        <form class="newsLetter__form" action="">
+            <input type="email" name="emailInput" class="newsLetter__form__input" placeholder="Email Here">
+            <button class="newsLetter__form__btn">Sign Me Up</button>
+        </form> 
+    </div>
+</section>
+
+
 <section id="trendingPosts">
     <div class="trendingPosts">
         <h2 class="trendingPosts__title">TRENDING POSTS</h2>
@@ -73,16 +85,8 @@
     </div>
 </section>
 
-<section id="newsLetter">
-    <div class="newsLetter">
-        <h2 class="newsLetter__text1"><span><i class="fa-solid fa-paper-plane fa-bounce fa newsLetter__icon"></i></span>  Join Our Newsletter</h2>
-        <h3 class="newsLetter__text2">Dive into Alice for Your Weekly Dose of Creativity !</h3>
-        <form class="newsLetter__form" action="">
-            <input type="email" name="emailInput" class="newsLetter__form__input" placeholder="Email Here">
-            <button class="newsLetter__form__btn">Sign Me Up</button>
-        </form> 
-    </div>
-</section>
+
+
 <?php include('footer.php'); ?>
 </body>
 </html>

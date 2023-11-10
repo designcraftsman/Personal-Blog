@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .navContainer {
-  background-color: #7094b4;
-  color: #CFF8EF;
+  background-color: #754737;
+  color: white;
   width: 100%;
   font-family: "Playfair Display", serif;
 }
@@ -20,7 +20,7 @@
   letter-spacing: 4px;
 }
 .navContainer__navbar__logo__style {
-  color: rgb(112, 5, 5);
+  color: #482e21;
 }
 .navContainer__navbar__search {
   margin-right: 40px;
@@ -30,7 +30,7 @@
   margin: 5px;
 }
 .navContainer__navbar__search i {
-  color: #CFF8EF;
+  color: white;
 }
 .navContainer__nav {
   list-style: none;
@@ -45,15 +45,15 @@
 .navContainer__nav__link a {
   padding: 0px 30px;
   text-decoration: none;
-  color: #CFF8EF;
+  color: white;
   font-size: 18px;
 }
 .navContainer__nav__link a:hover {
-  color: rgb(112, 5, 5);
+  color: #482e21;
 }
 
 #home {
-  background-color: #CFF8EF;
+  background-color: white;
   height: 100vh;
 }
 
@@ -127,7 +127,7 @@
   font-size: 30px;
   padding: 10px;
   border-radius: 5px;
-  border-left: 5px solid rgb(112, 5, 5);
+  border-left: 5px solid #482e21;
 }
 .trendingPosts__categories {
   list-style: none;
@@ -144,7 +144,7 @@
   margin: 20px;
 }
 .trendingPosts__categories__categorie.active {
-  background-color: rgb(112, 5, 5);
+  background-color: #482e21;
 }
 .trendingPosts__Posts {
   margin-top: 40px;
@@ -177,7 +177,11 @@
 }
 
 .newsLetter {
-  background-color: rgb(112, 5, 5);
+  background-image: url("https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #482e21;
   padding: 30px;
   display: flex;
   border-radius: 30px;
@@ -186,7 +190,7 @@
   align-items: center;
   flex-flow: column;
   font-family: "Playfair Display", serif;
-  color: #CFF8EF;
+  color: white;
 }
 .newsLetter__text1 {
   font-size: 30px;
@@ -208,7 +212,7 @@
 .newsLetter__form__btn {
   position: relative;
   right: 7px;
-  background-color: #7094b4;
+  background-color: #754737;
   font-size: 18px;
   font-weight: bolder;
   width: 150px;
@@ -228,7 +232,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #CFF8EF;
+  color: white;
   padding: 20px;
   flex-flow: row wrap;
 }
@@ -250,7 +254,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #CFF8EF;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

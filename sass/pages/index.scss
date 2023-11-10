@@ -129,6 +129,10 @@
     justify-content: center;
 }
 .newsLetter{
+    background-image: url('https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: $style;
     padding: 30px;
     display: flex;
