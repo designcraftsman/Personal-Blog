@@ -300,7 +300,7 @@
   font-family: "Playfair Display", serif;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: white;
   padding: 20px;
   flex-flow: row wrap;
@@ -314,7 +314,7 @@
 .footer__socials ul li {
   margin: 0px;
   display: inline;
-  padding: 20px;
+  margin-right: 20px;
 }
 .footer__about {
   text-align: center;
