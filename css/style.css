@@ -46,7 +46,8 @@
   padding: 0px 30px;
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 .navContainer__nav__link a:hover {
   color: #482e21;
@@ -59,13 +60,12 @@
 
 .container {
   display: grid;
-  padding: 20px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 40vh 40vh;
   grid-gap: 15px;
   font-family: "Playfair Display", serif;
   font-weight: bolder;
-  padding: 20px 100px;
+  padding: 40px 100px;
 }
 .container__left {
   grid-row: span 2;
@@ -129,6 +129,7 @@
   float: left;
   width: 65%;
   padding: 50px;
+  padding-top: 0px;
 }
 .trendingPosts__title {
   font-size: 30px;
@@ -169,15 +170,16 @@
 }
 
 .asideSection {
+  font-family: "Playfair Display", serif;
   margin-top: 80px;
-  padding: 20px;
   float: left;
-  width: 15%;
+  width: 20%;
 }
 .asideSection__title {
   font-size: 25px;
-  padding: 10px;
+  padding-left: 5px;
   border-radius: 5px;
+  margin-top: 50px;
   border-left: 5px solid #482e21;
 }
 .asideSection__recentPosts {
@@ -192,8 +194,8 @@
 }
 .asideSection__recentPosts__post__img img {
   border-radius: 50%;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
 }
 .asideSection__recentPosts__post__content {
   margin: 10px;
@@ -208,9 +210,33 @@
 }
 .asideSection__recentPosts__post__content h3 {
   width: 200px;
+  font-weight: light;
 }
 .asideSection__recentPosts__post__content p {
   width: 200px;
+}
+.asideSection__categories {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+.asideSection__categories hr {
+  border-color: #754737;
+  width: 100%;
+}
+.asideSection__categories__categorie {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px;
+}
+.asideSection__categories__categorie__symbol {
+  font-family: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.asideSection__categories__categorie__number {
+  margin-left: 5px;
 }
 
 #newsLetter {

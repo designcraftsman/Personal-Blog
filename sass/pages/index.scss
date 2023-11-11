@@ -4,13 +4,12 @@
 }
 .container {
     display: grid;
-    padding: 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows:40vh 40vh ;
     grid-gap: 15px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
-    padding: 20px 100px ;
+    padding: 40px 100px ;
     &__left {
         grid-row: span 2;
         background-image: cover;
@@ -78,7 +77,8 @@
     font-family: 'Playfair Display', serif;
     float: left;
     width: 65%; 
-    padding: 50px;// Adjusted width
+    padding: 50px;
+    padding-top:0px;
     &__title {
         font-size: 30px;
         padding: 10px;
@@ -119,14 +119,15 @@
 }
 
 .asideSection {
+    font-family: 'Playfair Display', serif;
     margin-top: 80px;
-    padding: 20px;
     float: left;
-    width: 15%; // Adjusted width
+    width: 20%; // Adjusted width
     &__title{
         font-size: 25px;
-        padding: 10px;
+        padding-left: 5px;
         border-radius: 5px;
+        margin-top: 50px;
         border-left: 5px solid $style;
     }
     &__recentPosts{
@@ -140,8 +141,8 @@
             &__img{
                 img{
                 border-radius: 50%;
-                width:130px;
-                height:130px;
+                width:120px;
+                height:120px;
                 }
             }
             &__content{
@@ -156,10 +157,34 @@
                 }
                 h3{
                     width: 200px;
+                    font-weight: light;
                 }
                 p{
                     width: 200px;
                 }
+            }
+        }
+    }
+    &__categories{
+        display:flex;
+        flex-flow:column;
+        justify-content: start;
+        hr{
+            border-color: $theme;
+            width: 100%;
+        }
+        &__categorie{
+            &__symbol{
+                font-family: none;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            display:flex;
+            justify-content: space-between;
+            font-size: 20px;
+            padding: 10px;
+            &__number{
+                margin-left:5px;
             }
         }
     }
