@@ -12,7 +12,7 @@
   align-items: center;
   flex-flow: row;
   width: 100%;
-  max-height: 80px;
+  max-height: 70px;
 }
 .navContainer__navbar__logo {
   font-size: 40px;
@@ -36,7 +36,6 @@
   list-style: none;
   margin: 0;
   text-align: center;
-  padding: 5px;
 }
 .navContainer__nav__link {
   display: inline;
@@ -118,10 +117,17 @@
   max-height: 40%;
 }
 
+#trendingPosts::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .trendingPosts {
-  padding: 60px;
-  padding-top: 0px;
   font-family: "Playfair Display", serif;
+  float: left;
+  width: 65%;
+  padding: 50px;
 }
 .trendingPosts__title {
   font-size: 30px;
@@ -129,46 +135,81 @@
   border-radius: 5px;
   border-left: 5px solid #482e21;
 }
-.trendingPosts__categories {
-  list-style: none;
-  margin-top: 50px;
-}
-.trendingPosts__categories__categorie {
-  color: gray;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 15px;
-  width: 100px;
-  border-radius: 10px;
-  display: inline;
-  margin: 20px;
-}
-.trendingPosts__categories__categorie.active {
-  background-color: #482e21;
-}
 .trendingPosts__Posts {
   margin-top: 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 }
 .trendingPosts__Posts__post {
-  max-width: 230px;
-  margin: 10px;
+  width: 300px;
+  max-height: 900px;
+  margin: 5px;
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.trendingPosts__Posts__post a {
+  background-color: #482e21;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
 .trendingPosts__Posts__post img {
   object-fit: cover;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
   width: 100%;
-  height: 100%;
+  height: 300px;
+  margin-bottom: 10px;
 }
-.trendingPosts__Posts__post h3 {
+
+.asideSection {
+  margin-top: 80px;
+  padding: 20px;
+  float: left;
+  width: 15%;
+}
+.asideSection__title {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #482e21;
+}
+.asideSection__recentPosts {
+  display: flex;
+  flex-flow: column;
+}
+.asideSection__recentPosts__post {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.asideSection__recentPosts__post__img img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.asideSection__recentPosts__post__content {
+  margin: 10px;
+}
+.asideSection__recentPosts__post__content a {
+  background-color: #482e21;
   padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+.asideSection__recentPosts__post__content h3 {
+  width: 200px;
+}
+.asideSection__recentPosts__post__content p {
+  width: 200px;
 }
 
 #newsLetter {
@@ -216,14 +257,14 @@
   font-size: 18px;
   font-weight: bolder;
   width: 150px;
-  top: 1px;
-  height: 66px;
+  top: 0px;
+  height: 65px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
 #footer {
-  background-color: #142746;
+  background-color: #482e21;
   margin-top: 50px;
 }
 
