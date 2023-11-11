@@ -28,29 +28,39 @@
 .navContainer__navbar__search__input {
   font-size: 18px;
   margin: 5px;
+  padding: 8px;
+  width: 70%;
 }
 .navContainer__navbar__search i {
-  color: white;
+  color: #482e21;
+  position: relative;
+  right: 40px;
 }
 .navContainer__nav {
   list-style: none;
   margin: 0;
   text-align: center;
+  background-color: white;
 }
 .navContainer__nav__link {
   display: inline;
   margin: 0;
+  padding: 18px 0px;
   height: 100%;
+}
+.navContainer__nav__link:hover {
+  background-color: #482e21;
+}
+.navContainer__nav__link:hover a {
+  color: white;
 }
 .navContainer__nav__link a {
   padding: 0px 30px;
   text-decoration: none;
   color: white;
   font-size: 15px;
-  font-weight: lighter;
-}
-.navContainer__nav__link a:hover {
   color: #482e21;
+  font-weight: lighter;
 }
 
 #home {
@@ -65,22 +75,33 @@
   grid-gap: 15px;
   font-family: "Playfair Display", serif;
   font-weight: bolder;
-  padding: 20px 80px;
+  padding: 10px 40px;
 }
 .container__left {
   grid-row: span 2;
-  background-image: cover;
   max-height: 100%;
+  position: relative;
 }
 .container__left img {
   width: 100%;
-  border-radius: 10px;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
+}
+.container__left a {
+  position: absolute;
+  bottom: 470px;
+  left: 530px;
+  background-color: #482e21;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
 }
 .container__left__title {
-  position: relative;
-  bottom: 150px;
+  position: absolute;
+  bottom: 0px;
   left: 20px;
   color: white;
   max-width: 90%;
@@ -92,6 +113,17 @@
   border-radius: 10px;
   height: 100%;
   object-fit: cover;
+}
+.container__rightTop a {
+  position: relative;
+  bottom: 240px;
+  left: 540px;
+  background-color: #482e21;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline;
 }
 .container__rightTop__title {
   position: relative;
@@ -107,6 +139,17 @@
   border-radius: 10px;
   height: 100%;
   object-fit: cover;
+}
+.container__rightBottom a {
+  position: relative;
+  bottom: 240px;
+  left: 540px;
+  background-color: #482e21;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline;
 }
 .container__rightBottom__title {
   position: relative;
@@ -148,7 +191,7 @@
 .trendingPosts__Posts__post {
   width: 300px;
   max-height: 900px;
-  margin: 5px;
+  margin: 20px;
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -178,9 +221,10 @@
 }
 .asideSection__title {
   font-size: 25px;
-  padding-left: 5px;
+  padding-left: 15px;
   border-radius: 5px;
   margin-top: 50px;
+  margin-bottom: 20px;
   border-left: 5px solid #482e21;
 }
 .asideSection__recentPosts {
@@ -221,15 +265,15 @@
   flex-flow: column;
   justify-content: start;
 }
-.asideSection__categories hr {
-  border-color: #754737;
-  width: 100%;
-}
 .asideSection__categories__categorie {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
   padding: 10px;
+}
+.asideSection__categories__categorie:hover {
+  background-color: #482e21;
 }
 .asideSection__categories__categorie__symbol {
   font-family: none;
@@ -300,7 +344,7 @@
   font-family: "Playfair Display", serif;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: white;
   padding: 20px;
   flex-flow: row wrap;
@@ -314,7 +358,7 @@
 .footer__socials ul li {
   margin: 0px;
   display: inline;
-  padding: 20px;
+  margin-right: 20px;
 }
 .footer__about {
   text-align: center;

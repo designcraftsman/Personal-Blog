@@ -13,14 +13,17 @@
     <div class="container">
         <div class="container__left">
             <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <a href="#">Lifestyle</a>
             <h2 class="container__left__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
         </div>
         <div class="container__rightTop">
             <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <a href="#">Lifestyle</a>
             <h2 class="container__rightTop__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
         </div>
         <div class="container__rightBottom">
             <img src="https://images.pexels.com/photos/106686/pexels-photo-106686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <a href="#">Lifestyle</a>
             <h2 class="container__rightBottom__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
         </div>
     </div>
@@ -107,18 +110,18 @@
                     <p>july 9 2023 </p>
                  </div>   
             </div>
-        </div>&
+        </div>
         <h2 class="asideSection__title">Browse Categories</h2>
         <div class="asideSection__categories">
-            <hr>
-            <div class="asideSection__categories__categorie">>  Sport <span class="asideSection__categories__categorie__number">(15)</span></div>
-            <hr>
-            <div class="asideSection__categories__categorie">>  Lifestyle <span class="asideSection__categories__categorie__number">(07)</span></div>
-            <hr>
-            <div class="asideSection__categories__categorie">>  Health <span class="asideSection__categories__categorie__number">(25)</span></div>
-            <hr>
-            <div class="asideSection__categories__categorie">>  Science <span class="asideSection__categories__categorie__number">(08)</span></div>
-            <hr>
+           
+            <div class="asideSection__categories__categorie">Sport <span class="asideSection__categories__categorie__number">(15)</span></div>
+            
+            <div class="asideSection__categories__categorie">Lifestyle <span class="asideSection__categories__categorie__number">(07)</span></div>
+            
+            <div class="asideSection__categories__categorie">Health <span class="asideSection__categories__categorie__number">(25)</span></div>
+           
+            <div class="asideSection__categories__categorie">Science <span class="asideSection__categories__categorie__number">(08)</span></div>
+           
         </div>
     </aside>
 </section>

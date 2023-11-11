@@ -23,9 +23,13 @@
         &__input{
             font-size: 18px;
             margin: 5px;
+            padding: 8px;
+            width: 70%;
         }
         i {
-            color: $text;
+            color: $style;
+            position: relative;
+            right:40px;
         }
     }
 }
@@ -33,19 +37,25 @@
     list-style: none;
     margin: 0; 
     text-align: center;
+    background-color: $text;
     &__link {
         display: inline;
         margin: 0;
+        padding:18px 0px;
         height: 100%;
+        &:hover{
+            background-color: $style;
+            a{
+                color:$text;
+            }
+        }
         a { 
             padding: 0px 30px;
             text-decoration: none;
             color: $text;
             font-size: 15px;
+            color:$style;
             font-weight: lighter;
-            &:hover{
-                color:$style;
-            }
         }
     }
 }
