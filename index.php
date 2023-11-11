@@ -107,7 +107,7 @@
                     <p>july 9 2023 </p>
                  </div>   
             </div>
-        </div>&
+        </div>
         <h2 class="asideSection__title">Browse Categories</h2>
         <div class="asideSection__categories">
             <hr>
