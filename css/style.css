@@ -65,7 +65,7 @@
   grid-gap: 15px;
   font-family: "Playfair Display", serif;
   font-weight: bolder;
-  padding: 40px 100px;
+  padding: 20px 80px;
 }
 .container__left {
   grid-row: span 2;
@@ -134,6 +134,7 @@
 .trendingPosts__title {
   font-size: 30px;
   padding: 10px;
+  margin-left: 70px;
   border-radius: 5px;
   border-left: 5px solid #482e21;
 }
