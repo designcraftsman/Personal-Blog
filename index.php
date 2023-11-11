@@ -40,50 +40,87 @@
 
 <section id="trendingPosts">
     <div class="trendingPosts">
-        <h2 class="trendingPosts__title">TRENDING POSTS</h2>
-        <ul class="trendingPosts__categories">
-            <li class="trendingPosts__categories__categorie active">All</li>
-            <li class="trendingPosts__categories__categorie ">Sport</li>
-            <li class="trendingPosts__categories__categorie">Lifestyle</li>
-            <li class="trendingPosts__categories__categorie">Beauty</li>
-        </ul>
+        <h2 class="trendingPosts__title">Hot Topics</h2>
         <div class="trendingPosts__Posts">
             <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <a href="#">Lifestyle</a>    
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p>    
             </div>
             <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <a href="#">Lifestyle</a>    
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
             </div>
             <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://images.pexels.com/photos/6760223/pexels-photo-6760223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <a href="#">Lifestyle</a>    
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
             </div>
             <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <a href="#">Lifestyle</a>    
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
             </div>
             <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://images.pexels.com/photos/14028292/pexels-photo-14028292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <a href="#">Lifestyle</a>    
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
             </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-            </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-            </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-            </div>
-
         </div>
     </div>
+    <aside class="asideSection">
+        <h2 class="asideSection__title">Recent Post</h2>
+        <div class="asideSetion__recentPosts">
+            <div class="asideSection__recentPosts__post">
+                <div class="asideSection__recentPosts__post__img">
+                    <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="asideSection__recentPosts__post__content">
+                    <a href="#">Lifestyle</a>
+                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                    <p>july 9 2023 </p>
+                 </div>   
+            </div>
+            <div class="asideSection__recentPosts__post">
+                <div class="asideSection__recentPosts__post__img">
+                    <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="asideSection__recentPosts__post__content">
+                    <a href="#">Lifestyle</a>
+                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                    <p>july 9 2023 </p>
+                 </div>   
+            </div>
+            <div class="asideSection__recentPosts__post">
+                <div class="asideSection__recentPosts__post__img">
+                    <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="asideSection__recentPosts__post__content">
+                    <a href="#">Lifestyle</a>
+                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                    <p>july 9 2023 </p>
+                 </div>   
+            </div>
+            <div class="asideSection__recentPosts__post">
+                <div class="asideSection__recentPosts__post__img">
+                    <img src="https://images.pexels.com/photos/1268099/pexels-photo-1268099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="asideSection__recentPosts__post__content">
+                    <a href="#">Lifestyle</a>
+                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                    <p>july 9 2023 </p>
+                 </div>   
+            </div>
+        </div>
+    </aside>
 </section>
+
 
 
 
