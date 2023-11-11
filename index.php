@@ -26,16 +26,6 @@
     </div>
 </section>
 
-<section id="newsLetter">
-    <div class="newsLetter">
-        <h2 class="newsLetter__text1"><span><i class="fa-solid fa-paper-plane fa-bounce fa newsLetter__icon"></i></span>  Join Our Newsletter</h2>
-        <h3 class="newsLetter__text2">Dive into Alice for Your Weekly Dose of Creativity !</h3>
-        <form class="newsLetter__form" action="">
-            <input type="email" name="emailInput" class="newsLetter__form__input" placeholder="Email Here">
-            <button class="newsLetter__form__btn">Sign Me Up</button>
-        </form> 
-    </div>
-</section>
 
 
 <section id="trendingPosts">
@@ -75,7 +65,7 @@
         </div>
     </div>
     <aside class="asideSection">
-        <h2 class="asideSection__title">Recent Post</h2>
+        <h2 class="asideSection__title">Recent Posts</h2>
         <div class="asideSetion__recentPosts">
             <div class="asideSection__recentPosts__post">
                 <div class="asideSection__recentPosts__post__img">
@@ -117,9 +107,34 @@
                     <p>july 9 2023 </p>
                  </div>   
             </div>
+        </div>&
+        <h2 class="asideSection__title">Browse Categories</h2>
+        <div class="asideSection__categories">
+            <hr>
+            <div class="asideSection__categories__categorie">>  Sport <span class="asideSection__categories__categorie__number">(15)</span></div>
+            <hr>
+            <div class="asideSection__categories__categorie">>  Lifestyle <span class="asideSection__categories__categorie__number">(07)</span></div>
+            <hr>
+            <div class="asideSection__categories__categorie">>  Health <span class="asideSection__categories__categorie__number">(25)</span></div>
+            <hr>
+            <div class="asideSection__categories__categorie">>  Science <span class="asideSection__categories__categorie__number">(08)</span></div>
+            <hr>
         </div>
     </aside>
 </section>
+
+<section id="newsLetter">
+    <div class="newsLetter">
+        <h2 class="newsLetter__text1"><span><i class="fa-solid fa-paper-plane fa-bounce fa newsLetter__icon"></i></span>  Join Our Newsletter</h2>
+        <h3 class="newsLetter__text2">Dive into Alice for Your Weekly Dose of Creativity !</h3>
+        <form class="newsLetter__form" action="">
+            <input type="email" name="emailInput" class="newsLetter__form__input" placeholder="Email Here">
+            <button class="newsLetter__form__btn">Sign Me Up</button>
+        </form> 
+    </div>
+</section>
+
+
 <?php include('footer.php'); ?>
 </body>
 </html>
