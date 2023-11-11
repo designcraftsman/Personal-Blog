@@ -113,15 +113,15 @@
         </div>
         <h2 class="asideSection__title">Browse Categories</h2>
         <div class="asideSection__categories">
-            <hr>
-            <div class="asideSection__categories__categorie">>  Sport <span class="asideSection__categories__categorie__number">(15)</span></div>
-            <hr>
-            <div class="asideSection__categories__categorie">>  Lifestyle <span class="asideSection__categories__categorie__number">(07)</span></div>
-            <hr>
-            <div class="asideSection__categories__categorie">>  Health <span class="asideSection__categories__categorie__number">(25)</span></div>
-            <hr>
-            <div class="asideSection__categories__categorie">>  Science <span class="asideSection__categories__categorie__number">(08)</span></div>
-            <hr>
+           
+            <div class="asideSection__categories__categorie">Sport <span class="asideSection__categories__categorie__number">(15)</span></div>
+            
+            <div class="asideSection__categories__categorie">Lifestyle <span class="asideSection__categories__categorie__number">(07)</span></div>
+            
+            <div class="asideSection__categories__categorie">Health <span class="asideSection__categories__categorie__number">(25)</span></div>
+           
+            <div class="asideSection__categories__categorie">Science <span class="asideSection__categories__categorie__number">(08)</span></div>
+           
         </div>
     </aside>
 </section>

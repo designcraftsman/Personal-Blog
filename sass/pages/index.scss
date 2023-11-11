@@ -166,7 +166,7 @@
         padding-left: 15px;
         border-radius: 5px;
         margin-top: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         border-left: 5px solid $style;
     }
     &__recentPosts{
@@ -208,11 +208,11 @@
         display:flex;
         flex-flow:column;
         justify-content: start;
-        hr{
-            border-color: $theme;
-            width: 100%;
-        }
         &__categorie{
+            cursor: pointer;
+            &:hover{
+                background-color: $style;
+            }
             &__symbol{
                 font-family: none;
                 font-size: 25px;

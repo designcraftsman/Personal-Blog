@@ -23,9 +23,13 @@
         &__input{
             font-size: 18px;
             margin: 5px;
+            padding: 8px;
+            width: 70%;
         }
         i {
-            color: $text;
+            color: $style;
+            position: relative;
+            right:40px;
         }
     }
 }
