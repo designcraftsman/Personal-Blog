@@ -6,15 +6,16 @@
             <i class="fa-solid fa-magnifying-glass fa"></i>
         </div>
     </div>
-    <hr>
+
     <nav class="navContainer__nav">
+    <hr>
         <ul>
             <li class="navContainer__nav__link"><a href="">HOME</a></li>
             <li class="navContainer__nav__link"><a href="">BLOG</a></li>
             <li class="navContainer__nav__link"><a href="">CATEGORIES</a></li>
             <li class="navContainer__nav__link"><a href="">CONTACT</a></li>
-            <li class="navContainer__nav__link"><a href="">ABOUT</a></li>
+            <li class="navContainer__nav__link special"><a href="">ABOUT</a></li>
         </ul>
+        <hr>
     </nav>
-    <hr>
 </div>
