@@ -2,7 +2,7 @@
     <div class="navContainer__navbar">
         <h1 class="navContainer__navbar__logo"><span class="navContainer__navbar__logo__style">ALI</span>CE</h1>
         <div class="navContainer__navbar__search">
-            <input type="text" class="navContainer__navbar__search__input">
+            <input type="text" placeholder="Search" class="navContainer__navbar__search__input">
             <i class="fa-solid fa-magnifying-glass fa navContainer__navbar__search__icon"></i>
         </div>
     </div>
