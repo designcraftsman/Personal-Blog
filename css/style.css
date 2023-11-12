@@ -65,7 +65,7 @@
 
 #home {
   background-color: white;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .container {
