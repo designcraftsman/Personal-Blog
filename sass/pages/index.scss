@@ -105,7 +105,17 @@
         }
     }
 }
-
+#posts{
+    h2{
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 0;
+        margin-top: 50px;
+        margin-left: 70px;
+        border-radius: 5px;
+        border-left: 5px solid $style;
+    }
+}
 #trendingPosts{
     padding: 20px;
     display: grid;
@@ -114,13 +124,6 @@
 }
 .trendingPosts {
     font-family: 'Playfair Display', serif;
-    &__title {
-        font-size: 30px;
-        padding: 10px;
-        margin-left: 70px;
-        border-radius: 5px;
-        border-left: 5px solid $style;
-    }
     &__Posts {
         margin-top: 40px;
         display: flex;

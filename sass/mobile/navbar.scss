@@ -1,0 +1,18 @@
+@media screen and (max-width:756px){
+    .navContainer{
+        &__navbar{
+            &__search{
+            display: none;
+            }
+            &__navIcon{
+                margin-right: 30px;
+                display: inline;
+            }
+        }
+        &__nav{
+            display: none;
+        }
+    }
+
+    
+}

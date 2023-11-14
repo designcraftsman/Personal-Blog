@@ -32,6 +32,7 @@
 
 
 <section id="posts">
+    <h2>Trending Posts</h2>
     <div id="trendingPosts">
     <div class="trendingPosts">
         <div class="trendingPosts__Posts">
