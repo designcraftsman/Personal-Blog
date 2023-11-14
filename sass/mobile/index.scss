@@ -1,0 +1,14 @@
+@media  screen and (max-width:1024px){
+    .newsLetter{
+        width: 80%;
+        &__form{
+            width: 250px;
+            &__input{
+                width: 180px;
+            }
+            &__btn{
+                width: 70px;
+            }
+        }
+    }
+}
