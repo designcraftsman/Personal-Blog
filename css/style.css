@@ -176,7 +176,7 @@
 .trendingPosts {
   font-family: "Playfair Display", serif;
   float: left;
-  width: 65%;
+  width: 60%;
   padding: 50px;
   padding-top: 0px;
 }
@@ -192,7 +192,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: start;
+  align-items: center;
 }
 .trendingPosts__Posts__post {
   width: 300px;
