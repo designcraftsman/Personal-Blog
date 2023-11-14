@@ -1,12 +1,12 @@
 #home{
     background-color:$text;
-    max-height: 100vh;
+    max-height: max-content;
 }
 
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows:40vh 40vh ;
+    grid-template-rows:35vh 35vh ;
     grid-gap: 15px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder;

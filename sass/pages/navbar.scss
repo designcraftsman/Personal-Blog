@@ -1,25 +1,25 @@
 .navContainer{
     background-color: $theme;
     color: $text;
-    width:100%;
     font-family: 'Playfair Display', serif;
 &__navbar {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-flow: row;
     width: 100%;
-    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     &__logo {
+        display: inline;
+        margin:10px;
+        margin-left: 20px;
         font-size: 40px;
-        margin-left: 30px;
         letter-spacing: 4px;
         &__style {
             color: $style;
         }
     }  
     &__search {
-        margin-right: 40px;
+        float: right;
+        position: relative;
         &__input{
             font-size: 18px;
             margin: 5px;
@@ -28,8 +28,9 @@
         }
         i {
             color: $style;
-            position: relative;
-            right:40px;
+            top: 15px;
+            position: absolute;
+            right:60px;
         }
     }
 }
