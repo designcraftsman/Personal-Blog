@@ -106,17 +106,14 @@
     }
 }
 
-#trendingPosts::after {
-    content: "";
-    display: table;
-    clear: both;
+#trendingPosts{
+    padding: 20px;
+    display: grid;
+    grid-template-rows:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,2fr));
 }
 .trendingPosts {
     font-family: 'Playfair Display', serif;
-    float: left;
-    width: 60%; 
-    padding: 50px;
-    padding-top:0px;
     &__title {
         font-size: 30px;
         padding: 10px;
@@ -158,11 +155,10 @@
 }
 
 .asideSection {
-    font-family: 'Playfair Display', serif;
-    margin-top: 80px;
-    float: left;
-    width: 20%; // Adjusted width
+    font-family: 'Playfair Display', serif; 
+    text-align: center;
     &__title{
+        display: inline-block;
         font-size: 25px;
         padding-left: 15px;
         border-radius: 5px;
@@ -172,17 +168,20 @@
     }
     &__recentPosts{
         display:flex;
-        flex-flow:column;
+        flex-flow:row;
+        justify-content: center;
+        align-items: center;
         &__post{
             margin-top:20px;
             display:flex;
             flex-flow: row;
+            justify-content: center;
             align-items: center;
             &__img{
                 img{
                 border-radius: 50%;
-                width:120px;
-                height:120px;
+                width:100px;
+                height:100px;
                 }
             }
             &__content{
@@ -196,11 +195,11 @@
                 display: inline;
                 }
                 h3{
-                    width: 200px;
+                    width: 150px;
                     font-weight: light;
                 }
                 p{
-                    width: 200px;
+                    width: 150px;
                 }
             }
         }
@@ -208,7 +207,8 @@
     &__categories{
         display:flex;
         flex-flow:column;
-        justify-content: start;
+        justify-content: center;
+        padding: 20px;
         &__categorie{
             cursor: pointer;
             &:hover{
@@ -246,7 +246,7 @@
     padding: 30px;
     display: flex;
     border-radius: 30px;
-    width: 90%;
+    width: 85%;
     justify-content: center;
     align-items: center;
     flex-flow: column;
@@ -261,8 +261,10 @@
         font-weight: lighter;
     }
     &__form {
+        position: relative;
+        width: 400px;
         &__input{
-            width: 300px;
+            width: 250px;
             height: 50px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
@@ -271,8 +273,8 @@
             font-size: 18px;
         }
         &__btn{
-            position: relative;
-            right: 7px;
+            position:absolute;
+            right:18px;
             background-color:$theme;
             font-size:18px;
             font-weight: bolder;

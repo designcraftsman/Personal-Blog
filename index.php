@@ -31,9 +31,9 @@
 
 
 
-<section id="trendingPosts">
+<section id="posts">
+    <div id="trendingPosts">
     <div class="trendingPosts">
-        <h2 class="trendingPosts__title">Hot Topics</h2>
         <div class="trendingPosts__Posts">
             <div class="trendingPosts__Posts__post">
                 <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
@@ -53,6 +53,16 @@
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
             </div>
+        </div>
+    </div>
+    <div class="trendingPosts">
+        <div class="trendingPosts__Posts">
+            <div class="trendingPosts__Posts__post">
+                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <a href="#">Lifestyle</a>    
+                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p>    
+            </div>
             <div class="trendingPosts__Posts__post">
                 <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 <a href="#">Lifestyle</a>    
@@ -60,7 +70,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
             </div>
             <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/14028292/pexels-photo-14028292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://images.pexels.com/photos/6760223/pexels-photo-6760223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 <a href="#">Lifestyle</a>    
                 <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
