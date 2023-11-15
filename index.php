@@ -80,7 +80,7 @@
     </div>
     <aside class="asideSection">
         <h2 class="asideSection__title">Recent Posts</h2>
-        <div class="asideSetion__recentPosts">
+        <div class="asideSection__recentPosts">
             <div class="asideSection__recentPosts__post">
                 <div class="asideSection__recentPosts__post__img">
                     <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">

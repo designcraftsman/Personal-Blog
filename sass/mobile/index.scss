@@ -13,3 +13,9 @@
     }
 }
 
+@media screen and (min-width: 708px) and (max-width: 1090px) {
+   .asideSection{
+    grid-column: span 2;
+   }
+}
+

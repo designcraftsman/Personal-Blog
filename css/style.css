@@ -225,7 +225,7 @@
 
 .asideSection {
   font-family: "Playfair Display", serif;
-  text-align: center;
+  text-align: start;
 }
 .asideSection__title {
   display: inline-block;
@@ -238,8 +238,8 @@
 }
 .asideSection__recentPosts {
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
 }
 .asideSection__recentPosts__post {
@@ -276,9 +276,11 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 .asideSection__categories__categorie {
+  width: 80%;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -395,6 +397,11 @@
     width: 70px;
   }
 }
+@media screen and (min-width: 708px) and (max-width: 1090px) {
+  .asideSection {
+    grid-column: span 2;
+  }
+}
 @media screen and (max-width: 756px) {
   .navContainer__navbar__search {
     display: none;
@@ -411,6 +418,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
+}
+
+form {
+  margin: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

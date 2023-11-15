@@ -159,7 +159,7 @@
 
 .asideSection {
     font-family: 'Playfair Display', serif; 
-    text-align: center;
+    text-align: start;
     &__title{
         display: inline-block;
         font-size: 25px;
@@ -171,8 +171,8 @@
     }
     &__recentPosts{
         display:flex;
-        flex-flow:row;
-        justify-content: center;
+        flex-flow:row wrap;
+        justify-content: space-around;
         align-items: center;
         &__post{
             margin-top:20px;
@@ -211,8 +211,10 @@
         display:flex;
         flex-flow:column;
         justify-content: center;
+        align-items: center;
         padding: 20px;
         &__categorie{
+            width: 80%;
             cursor: pointer;
             &:hover{
                 background-color: $style;
