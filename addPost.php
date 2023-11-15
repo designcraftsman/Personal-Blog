@@ -25,14 +25,14 @@
     </form>
 <?php
 
-    if (!isset($_POST['postTitle']) || !isset($_POST['postContent']) || !isset($_POST['postCategorie']) || !isset($_FILES['postImg']) && $_FILES['postImg']['error'] == 0) 
+    if (!isset($_POST['postTitle']) || !isset($_POST['postContent']) || !isset($_POST['categorie']) || !isset($_FILES['postImg']) && $_FILES['postImg']['error'] == 0) 
     {
 	    echo('Erreur D\'envoie !');
         return;
     }
     $postTitle = $_POST['postTitle'];	
     $postContent = $_POST['postContent'];
-    $postCategorie = $_POST['postCategorie'];
+    $postCategorie = $_POST['categorie'];
     $fileInfo = pathinfo($_FILES['postImg']['name']);
     $extension = $fileInfo['extension'];
     $allowedExtensions = ['jpg', 'jpeg', 'gif', 'png'];

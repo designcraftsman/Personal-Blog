@@ -52,33 +52,11 @@
             <?php foreach($posts as $post){ ?>
                 <div class="trendingPosts__Posts__post">
                 <img src="<?php echo($post['postImg']); ?>" alt="">
-                <a href="#">Lifestyle</a>    
+                <a href="#"><?php echo($post['categorie']); ?></a>    
                 <h3><?php echo($post['postTitle']); ?></h3>
                 <p><?php echo($post['postContent']); ?></p>    
             </div>
             <?php } ?>
-        </div>
-    </div>
-    <div class="trendingPosts">
-        <div class="trendingPosts__Posts">
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <a href="#">Lifestyle</a>    
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p>    
-            </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <a href="#">Lifestyle</a>    
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
-            </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/6760223/pexels-photo-6760223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <a href="#">Lifestyle</a>    
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
-            </div>
         </div>
     </div>
     <aside class="asideSection">
@@ -138,6 +116,7 @@
            
         </div>
     </aside>
+            </div>
 </section>
 
 <section id="newsLetter">

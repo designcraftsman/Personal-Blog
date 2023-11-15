@@ -120,10 +120,11 @@
     padding: 20px;
     display: grid;
     grid-template-rows:repeat(auto-fit,minmax(200px,1fr));
-    grid-template-columns: repeat(auto-fit,minmax(350px,2fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 .trendingPosts {
     font-family: 'Playfair Display', serif;
+    grid-column: span 2;
     &__Posts {
         margin-top: 40px;
         display: flex;
@@ -131,8 +132,7 @@
         justify-content: space-around;
         align-items: center;
         &__post {
-            width: 300px;
-            max-height:900px;
+            width: 300px; 
             margin: 20px;
             background-color: white;
             border-bottom-left-radius: 10px;
@@ -161,7 +161,7 @@
     font-family: 'Playfair Display', serif; 
     text-align: start;
     &__title{
-        display: inline-block;
+        margin: 0;
         font-size: 25px;
         padding-left: 15px;
         border-radius: 5px;
