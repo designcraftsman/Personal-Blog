@@ -8,7 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>  
 <body>
-<?php include('navbar.php'); ?>
+<?php include('navbar.php');
+    try
+    {
+        $db = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root');
+    }
+    catch (Exception $e)
+    {
+        die('Erreur : ' . $e->getMessage());
+    }
+    $sqlQuery = 'SELECT postTitle, postImg ,categorie, postContent FROM posts';
+    $postsStatement = $db->prepare($sqlQuery);
+    $postsStatement->execute();
+    $posts = $postsStatement->fetchAll();
+?>
 <section id="home">
     <div class="container">
         <div class="container__left">
@@ -36,24 +49,14 @@
     <div id="trendingPosts">
     <div class="trendingPosts">
         <div class="trendingPosts__Posts">
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <?php foreach($posts as $post){ ?>
+                <div class="trendingPosts__Posts__post">
+                <img src="<?php echo($post['postImg']); ?>" alt="">
                 <a href="#">Lifestyle</a>    
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p>    
+                <h3><?php echo($post['postTitle']); ?></h3>
+                <p><?php echo($post['postContent']); ?></p>    
             </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/1008212/pexels-photo-1008212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <a href="#">Lifestyle</a>    
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
-            </div>
-            <div class="trendingPosts__Posts__post">
-                <img src="https://images.pexels.com/photos/6760223/pexels-photo-6760223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <a href="#">Lifestyle</a>    
-                <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio.</p> 
-            </div>
+            <?php } ?>
         </div>
     </div>
     <div class="trendingPosts">
