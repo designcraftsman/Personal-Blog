@@ -1,0 +1,14 @@
+@media  screen and (max-width:1024px){
+    .postsContainer{
+        &__posts{
+            &__post{
+                margin: 5px;
+                flex-flow: column;
+            }
+            &__img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}

@@ -432,13 +432,13 @@
 }
 .postsContainer__posts__post {
   margin: 20px;
-  height: 300px;
+  height: max-content;
   display: flex;
   align-items: center;
   flex-flow: row;
 }
 .postsContainer__posts__post__img {
-  width: 400px;
+  width: 350px;
   height: 300px;
 }
 .postsContainer__posts__post__img img {
@@ -461,12 +461,25 @@
 }
 .postsContainer__posts__post__content h3 {
   font-size: x-large;
+  max-width: 100%;
+  max-height: 50px;
 }
 .postsContainer__posts__post__content p {
   max-width: 100%;
+  max-height: 100px;
   overflow: hidden;
 }
 
+@media screen and (max-width: 1024px) {
+  .postsContainer__posts__post {
+    margin: 5px;
+    flex-flow: column;
+  }
+  .postsContainer__posts__img {
+    width: 200px;
+    height: 200px;
+  }
+}
 body {
   padding: 0;
   margin: 0;

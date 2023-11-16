@@ -9,12 +9,12 @@
         grid-column: span 2;
         &__post{
             margin: 20px;
-            height: 300px;
+            height: max-content;
             display: flex;
             align-items: center;
             flex-flow: row;
             &__img{
-                width: 400px;
+                width: 350px;
                 height: 300px;
                 img{    
                     width: 100%;
@@ -36,10 +36,13 @@
                 }
                 h3{
                     font-size: x-large;
+                    max-width: 100%;
+                    max-height: 50px;
                 }
                 p{
                     max-width: 100%;
-                    overflow: hidden;
+                    max-height: 100px;
+                    overflow:hidden;
                 }
             }
         }
