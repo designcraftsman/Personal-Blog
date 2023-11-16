@@ -5,6 +5,19 @@
     grid-gap: 10px;
     padding: 20px;
     &__posts{
+        &__categorieContainer{
+            background-color: $theme;
+            border-radius: 10px;
+            width:fit-content;
+            padding: 10px;
+        &__categorieLabel{
+            font-size: 30px;
+        }
+        &__categorie{
+            padding: 2px;
+            font-size: 25px;
+        }
+    }
         font-family: 'Playfair Display', serif;
         grid-column: span 2;
         &__post{

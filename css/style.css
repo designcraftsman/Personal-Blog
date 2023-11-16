@@ -437,6 +437,19 @@
   font-family: "Playfair Display", serif;
   grid-column: span 2;
 }
+.postsContainer__posts__categorieContainer {
+  background-color: #754737;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+}
+.postsContainer__posts__categorieContainer__categorieLabel {
+  font-size: 30px;
+}
+.postsContainer__posts__categorieContainer__categorie {
+  padding: 2px;
+  font-size: 25px;
+}
 .postsContainer__posts__post {
   margin: 20px;
   height: max-content;
