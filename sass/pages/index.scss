@@ -165,20 +165,18 @@
 .asideSection {
     font-family: 'Playfair Display', serif; 
     text-align: start;
-    &__title{
-        margin: 0;
-        font-size: 25px;
-        padding-left: 15px;
-        border-radius: 5px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        border-left: 5px solid $style;
-    }
     &__recentPosts{
         display:flex;
         flex-flow:row wrap;
         justify-content: space-around;
         align-items: center;
+        &__title{
+            font-size: 25px;
+            padding-left: 15px;
+            border-radius: 5px;
+            margin: 30px;
+            border-left: 5px solid $style;
+        }
         &__post{
             margin-top:20px;
             display:flex;
@@ -218,6 +216,15 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+        &__title{
+            margin: 0;
+            font-size: 25px;
+            padding-left: 15px;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-left: 5px solid $style;
+        }
         &__categorie{
             width: 80%;
             cursor: pointer;

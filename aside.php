@@ -1,6 +1,6 @@
 <aside class="asideSection">
-        <h2 class="asideSection__title">Recent Posts</h2>
         <div class="asideSection__recentPosts">
+        <h2 class="asideSection__recentPosts__title">Recent Posts</h2>
             <div class="asideSection__recentPosts__post">
                 <div class="asideSection__recentPosts__post__img">
                     <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
@@ -42,9 +42,8 @@
                  </div>   
             </div>
         </div>
-        <h2 class="asideSection__title">Browse Categories</h2>
         <div class="asideSection__categories">
-           
+            <h2 class="asideSection__categories__title">Browse Categories</h2>
             <div class="asideSection__categories__categorie">Sport <span class="asideSection__categories__categorie__number">(15)</span></div>
             
             <div class="asideSection__categories__categorie">Lifestyle <span class="asideSection__categories__categorie__number">(07)</span></div>
