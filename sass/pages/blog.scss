@@ -5,10 +5,26 @@
     grid-gap: 10px;
     padding: 20px;
     &__posts{
+        &__categorieContainer{
+            border-radius: 10px;
+            width:fit-content;
+            padding: 10px;
+        &__categorieLabel{
+            font-size: 30px;
+            border-left: 5px solid $theme;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+        &__categorie{
+            border-radius: 10px;
+            padding: 2px;
+            font-size: 25px;
+        }
+    }
         font-family: 'Playfair Display', serif;
         grid-column: span 2;
         &__post{
-            margin: 20px;
+            margin: 40px;
             height: max-content;
             display: flex;
             align-items: center;
@@ -24,7 +40,7 @@
                 }
             } 
             &__content{
-                width: 400px;
+                width: 350px;
                 margin: 20px;
                 a{  
                     background-color: $style;
@@ -37,11 +53,12 @@
                 h3{
                     font-size: x-large;
                     max-width: 100%;
-                    max-height: 50px;
+                    max-height: 100%;
+                    overflow: hidden;
                 }
                 p{
                     max-width: 100%;
-                    max-height: 100px;
+                    max-height: 100%;
                     overflow:hidden;
                 }
             }

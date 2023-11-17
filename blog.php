@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal-Blog</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>  
+<?php include('head.php'); ?>
 <body>
   <?php include('navbar.php');
     try
@@ -30,6 +22,16 @@
 ?>
    <div class="postsContainer">
         <main class="postsContainer__posts">
+          <div class="postsContainer__posts__categorieContainer">
+          <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Categorie:</label>
+          <select class="postsContainer__posts__categorieContainer__categorie" name="categorie" id="categorie">
+            <option value="All">All</option>
+            <option value="lifestyle">lifestyle</option>
+            <option value="sport">sport</option>
+            <option value="health">health</option>
+            <option value="science">science</option>
+          </select>
+          </div>
             <?php  foreach ($displayPosts as $post) {
            ?>
         <div class="postsContainer__posts__post">
