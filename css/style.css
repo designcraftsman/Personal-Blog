@@ -163,7 +163,8 @@
   border-left: 5px solid #482e21;
 }
 .asideSection__categories__categorie {
-  width: 80%;
+  margin: 5px;
+  width: 60%;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -373,6 +374,7 @@
 }
 
 #newsLetter {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -473,6 +475,7 @@
   border-radius: 10px;
   color: white;
   padding: 2px;
+  margin: 10px;
   font-size: 25px;
 }
 .postsContainer__posts__post {

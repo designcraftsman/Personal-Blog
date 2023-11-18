@@ -62,7 +62,8 @@
             border-left: 5px solid $style;
         }
         &__categorie{
-            width: 80%;
+            margin: 5px;
+            width: 60%;
             cursor: pointer;
             &:hover{
                 background-color: $style;
