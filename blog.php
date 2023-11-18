@@ -32,14 +32,6 @@
             <option value="science">science</option>
           </select>
           </div>
-          <div class="postsContainer__posts__categorieContainer">
-          <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Categorie:</label>
-          <select class="postsContainer__posts__categorieContainer__categorie" name="categorie" id="categorie">
-            <option value="All">All</option>
-            <option value="lifestyle">lifestyle</option>
-            <option value="sport">sport</option>
-          </select>
-          </div>
             <?php  foreach ($displayPosts as $post) {
            ?>
         <div class="postsContainer__posts__post">
