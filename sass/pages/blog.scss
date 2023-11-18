@@ -6,14 +6,19 @@
     padding: 20px;
     &__posts{
         &__categorieContainer{
-            background-color: $theme;
-            border-radius: 10px;
-            width:fit-content;
+            margin-left: 25px;
             padding: 10px;
         &__categorieLabel{
+            padding-left: 15px;
+            border-radius: 5px;
+            margin: 30px;
+            border-left: 5px solid $style;
             font-size: 30px;
         }
         &__categorie{
+            background-color: $style;
+            border-radius: 10px;
+            color:$text;
             padding: 2px;
             font-size: 25px;
         }
