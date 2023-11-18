@@ -42,6 +42,7 @@
     margin: 0; 
     text-align: center;
     background-color: $text;
+    position: relative;
     &__link {
         display: inline;
         margin: 0;
@@ -62,5 +63,38 @@
             font-weight: lighter;
         }
     }
+    &__categories{
+        display: none;
+        position: absolute;
+        left: 51%;
+        transform: translate(-54%, -6%);
+        text-align: center;
+        width: 192px;
+        border: 1px solid $style;
+        &__categorie{
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom:10px ;
+            border-bottom: 1px solid $style;
+            &:hover{
+                background-color: $style;
+                a{
+                    color:$text;
+                }
+            }
+        }    
+        ul{ 
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            a{  
+                text-decoration: none;
+                color:$style;
+                width: 100%;
+            }
+            
+        }
+    }
 }
 }
+

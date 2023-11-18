@@ -23,7 +23,7 @@
    <div class="postsContainer">
         <main class="postsContainer__posts">
           <div class="postsContainer__posts__categorieContainer">
-          <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Categorie:</label>
+          <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Categorie :</label>
           <select class="postsContainer__posts__categorieContainer__categorie" name="categorie" id="categorie">
             <option value="All">All</option>
             <option value="lifestyle">lifestyle</option>
