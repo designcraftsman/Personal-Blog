@@ -24,7 +24,7 @@
                  </ul>
             </li>
             <li class="navContainer__nav__link"><a href="contact.php"><i class="fa-solid fa-address-book"></i>  CONTACT</a></li>
-            <li class="navContainer__nav__link special"><a href=""><i class="fa-solid fa-circle-info"></i>  ABOUT</a></li>
+            <li class="navContainer__nav__link special"><a href="about.php"><i class="fa-solid fa-circle-info"></i>  ABOUT</a></li>
         </ul>
         <hr>
     </nav>

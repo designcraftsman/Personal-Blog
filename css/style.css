@@ -46,6 +46,10 @@
   text-align: center;
   background-color: white;
 }
+.navContainer__nav hr {
+  margin: 0;
+  padding: 0;
+}
 .navContainer__nav__link {
   display: inline;
   margin: 0;
@@ -630,6 +634,56 @@
 }
 .contactContainer__container__contact__info__socials i {
   color: black;
+}
+
+#aboutHeader {
+  background-color: #482e21;
+  text-align: center;
+}
+#aboutHeader h1 {
+  margin: 0;
+  font-size: 80px;
+  padding: 30px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 5px;
+}
+
+.aboutContent {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 30px;
+}
+.aboutContent__img {
+  width: 450px;
+  height: 450px;
+  margin: 50px;
+}
+.aboutContent__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.aboutContent__img__socials {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+}
+.aboutContent__img__socials li {
+  margin: 10px;
+  display: inline;
+}
+.aboutContent__img__socials i {
+  color: #482e21;
+}
+.aboutContent__text {
+  border: 1px solid #482e21;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 body {
