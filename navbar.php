@@ -15,18 +15,17 @@
         <ul>
             <li class="navContainer__nav__link"><a href="index.php"><i class="fa-solid fa-house"></i> HOME</a></li>
             <li class="navContainer__nav__link"><a href="blog.php"><i class="fa-solid fa-newspaper"></i>      BLOG</a></li>
-            <li id="categoriesNav" class="navContainer__nav__link"><a href=""><i class="fa-solid fa-layer-group"></i>  CATEGORIES  <i class="fa-solid fa-chevron-down"></i> </a></li>
+            <li id="categorieNav" class="navContainer__nav__link"><a href=""><i class="fa-solid fa-layer-group"></i>  CATEGORIES  <i class="fa-solid fa-chevron-down"></i> </a>
+                 <ul class="navContainer__nav__link__list">
+                    <li class="navContainer__nav__link__list__categorie"><a href="#">Lifestyle</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="#">Health</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="#">Sport</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="#">Science</a></li>
+                 </ul>
+            </li>
             <li class="navContainer__nav__link"><a href="contact.php"><i class="fa-solid fa-address-book"></i>  CONTACT</a></li>
             <li class="navContainer__nav__link special"><a href=""><i class="fa-solid fa-circle-info"></i>  ABOUT</a></li>
         </ul>
         <hr>
-        <div id="categoriesContainer" class="navContainer__nav__categories">
-            <ul>
-                <li class="navContainer__nav__categories__categorie"><a href="#">Lifestyle</a></li>
-                <li class="navContainer__nav__categories__categorie"><a href="#">Health</a></li>
-                <li class="navContainer__nav__categories__categorie"><a href="#">Sport</a></li>
-                <li class="navContainer__nav__categories__categorie"><a href="#">Science</a></li>
-            </ul>
-        </div>
     </nav>
 </div>
