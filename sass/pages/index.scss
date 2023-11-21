@@ -131,6 +131,7 @@
         justify-content: space-around;
         align-items: center;
         &__post {
+            cursor: pointer;
             width: 350px; 
             margin-top: 20px;
             background-color: white;

@@ -2,7 +2,7 @@
 <body>
 <?php include('navbar.php');
     include('connection.php');   
-    $sqlQuery = 'SELECT postTitle, postImg ,categorie, postContent FROM posts';
+    $sqlQuery = 'SELECT * FROM posts';
     $postsStatement = $db->prepare($sqlQuery);
     $postsStatement->execute();
     $posts = $postsStatement->fetchAll();
@@ -35,12 +35,12 @@
     <div class="trendingPosts">
         <div class="trendingPosts__Posts">
             <?php foreach($posts as $post){ ?>
-                <article class="trendingPosts__Posts__post">
+                <article class="trendingPosts__Posts__post"  onclick="postPage(<?php echo($post['idPost']); ?> ) " > 
                 <img src="<?php echo($post['postImg']); ?>" alt="">
                 <a href="#"><?php echo($post['categorie']); ?></a>    
                 <h3><?php echo($post['postTitle']); ?></h3>
                 <p><?php echo($post['postContent']); ?></p>    
-            </article>
+                </article>
             <?php } ?>
         </div>
     </div>
@@ -59,5 +59,6 @@
     </div>
 </section>
 <?php include('footer.php'); ?>
+<script src="js/script.js"></script>
 </body>
 </html>
