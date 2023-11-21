@@ -1,14 +1,7 @@
 <?php include('head.php'); ?>  
 <body>
 <?php include('navbar.php');
-    try
-    {
-        $db = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root');
-    }
-    catch (Exception $e)
-    {
-        die('Erreur : ' . $e->getMessage());
-    }
+    include('connection.php');   
     $sqlQuery = 'SELECT postTitle, postImg ,categorie, postContent FROM posts';
     $postsStatement = $db->prepare($sqlQuery);
     $postsStatement->execute();
@@ -16,21 +9,21 @@
 ?>
 <section id="home">
     <div class="container">
-        <div class="container__left">
+        <article class="container__left">
             <a href="#">Lifestyle</a>
             <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <h2 class="container__left__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
-        </div>
-        <div class="container__rightTop">
+        </article>
+        <article class="container__rightTop">
             <a href="#">Lifestyle</a>
             <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <h2 class="container__rightTop__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
-        </div>
-        <div class="container__rightBottom">
+        </article>
+        <article class="container__rightBottom">
             <a href="#">Lifestyle</a>
             <img src="https://images.pexels.com/photos/106686/pexels-photo-106686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <h2 class="container__rightBottom__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
-        </div>
+        </article>
     </div>
 </section>
 
@@ -42,12 +35,12 @@
     <div class="trendingPosts">
         <div class="trendingPosts__Posts">
             <?php foreach($posts as $post){ ?>
-                <div class="trendingPosts__Posts__post">
+                <article class="trendingPosts__Posts__post">
                 <img src="<?php echo($post['postImg']); ?>" alt="">
                 <a href="#"><?php echo($post['categorie']); ?></a>    
                 <h3><?php echo($post['postTitle']); ?></h3>
                 <p><?php echo($post['postContent']); ?></p>    
-            </div>
+            </article>
             <?php } ?>
         </div>
     </div>
