@@ -484,6 +484,7 @@
   font-size: 25px;
 }
 .postsContainer__posts__post {
+  cursor: pointer;
   margin: 40px;
   height: max-content;
   display: flex;
@@ -686,6 +687,24 @@
   width: 500px;
   padding: 20px;
   border-radius: 20px;
+}
+
+.postPage {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.articleContent {
+  grid-column: span 2;
+}
+.articleContent img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  display: block;
 }
 
 body {

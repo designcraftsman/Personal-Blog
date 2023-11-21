@@ -27,6 +27,7 @@
         font-family: 'Playfair Display', serif;
         grid-column: span 2;
         &__post{
+            cursor: pointer;
             margin: 40px;
             height: max-content;
             display: flex;

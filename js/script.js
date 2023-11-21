@@ -1,1 +1,3 @@
-const categoriesNav = document.getElementById('categoriesNav');
+function postPage(idPost){
+    window.location.href = "post.php?id=" + idPost;
+}
