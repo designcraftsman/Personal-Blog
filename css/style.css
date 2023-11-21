@@ -120,6 +120,7 @@
   border-left: 5px solid #482e21;
 }
 .asideSection__recentPosts__post {
+  cursor: pointer;
   margin-top: 20px;
   display: flex;
   flex-flow: row;
@@ -129,6 +130,7 @@
 .asideSection__recentPosts__post__img img {
   border-radius: 50%;
   width: 100px;
+  object-fit: cover;
   height: 100px;
 }
 .asideSection__recentPosts__post__content {

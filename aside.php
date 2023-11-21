@@ -1,46 +1,29 @@
+<?php include('connection.php');
+    $sqlQuery = "SELECT * FROM posts ";
+    $postsStatement = $db->prepare($sqlQuery);
+    $postsStatement->execute();
+    $posts = $postsStatement->fetchAll();
+    $i = 0;
+?>
 <aside class="asideSection">
     <h2 class="asideSection__recentPosts__title">Recent Posts</h2>        
     <div class="asideSection__recentPosts">
-            <article class="asideSection__recentPosts__post">
+            <?php foreach($posts as $post){?>
+            <article class="asideSection__recentPosts__post" onclick="postPage(<?php echo($post['idPost']); ?> ) ">
                 <div class="asideSection__recentPosts__post__img">
-                    <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img src="<?php echo($post['postImg']); ?>" alt="">
                 </div>
                 <div class="asideSection__recentPosts__post__content">
-                    <a href="#">Lifestyle</a>
-                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                    <p>july 9 2023 </p>
+                    <a href="#"><?php echo($post['categorie']); ?></a>
+                    <h3><?php echo($post['postTitle']); ?></h3>
+                    <p><?php echo($post['postDate']); ?></p>
                  </div>   
             </article>
-            <div class="asideSection__recentPosts__post">
-                <div class="asideSection__recentPosts__post__img">
-                    <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                </div>
-                <div class="asideSection__recentPosts__post__content">
-                    <a href="#">Lifestyle</a>
-                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                    <p>july 9 2023 </p>
-                 </div>   
-            </div>
-            <div class="asideSection__recentPosts__post">
-                <div class="asideSection__recentPosts__post__img">
-                    <img src="https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                </div>
-                <div class="asideSection__recentPosts__post__content">
-                    <a href="#">Lifestyle</a>
-                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                    <p>july 9 2023 </p>
-                 </div>   
-            </div>
-            <div class="asideSection__recentPosts__post">
-                <div class="asideSection__recentPosts__post__img">
-                    <img src="https://images.pexels.com/photos/1268099/pexels-photo-1268099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                </div>
-                <div class="asideSection__recentPosts__post__content">
-                    <a href="#">Lifestyle</a>
-                    <h3>9 Most Awesome Blue Lake With Snow Mountain</h3>
-                    <p>july 9 2023 </p>
-                 </div>   
-            </div>
+            <?php $i+=1;
+            if($i>=5){
+                break;
+            }
+        } ?>
         </div>
         <div class="asideSection__categories">
             <h2 class="asideSection__categories__title">Browse Categories</h2>
