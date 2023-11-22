@@ -17,10 +17,10 @@
             <li class="navContainer__nav__link"><a href="blog.php"><i class="fa-solid fa-newspaper"></i>      BLOG</a></li>
             <li id="categorieNav" class="navContainer__nav__link"><a href=""><i class="fa-solid fa-layer-group"></i>  CATEGORIES  <i class="fa-solid fa-chevron-down"></i> </a>
                  <ul class="navContainer__nav__link__list">
-                    <li class="navContainer__nav__link__list__categorie"><a href="#">Lifestyle</a></li>
-                    <li class="navContainer__nav__link__list__categorie"><a href="#">Health</a></li>
-                    <li class="navContainer__nav__link__list__categorie"><a href="#">Sport</a></li>
-                    <li class="navContainer__nav__link__list__categorie"><a href="#">Science</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=lifestyle">Lifestyle</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=health">Health</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=food">Food</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=science">Science</a></li>
                  </ul>
             </li>
             <li class="navContainer__nav__link"><a href="contact.php"><i class="fa-solid fa-address-book"></i>  CONTACT</a></li>
