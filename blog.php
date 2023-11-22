@@ -1,31 +1,51 @@
 <?php include('head.php'); ?>
 <body>
   <?php include('navbar.php');
-    include('connection.php');
-    $sqlQuery = 'SELECT * FROM posts';
-    $postsStatement = $db->prepare($sqlQuery);
-    $postsStatement->execute();
-    $posts = $postsStatement->fetchAll();
-    $totalPosts = count($posts);
-    $postsPerPage = 4;
-    $totalPages = ceil($totalPosts/$postsPerPage);
-    $currentPage = isset($_GET['page'])?$_GET['page']:1;
-    $startIndex = ($currentPage - 1) * $postsPerPage;
-    $displayPosts = array_slice($posts, $startIndex, $postsPerPage);
-?>
+    include('connection.php');?>
    <div class="postsContainer">
         <main class="postsContainer__posts">
           <div class="postsContainer__posts__categorieContainer">
           <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Categorie :</label>
-          <select class="postsContainer__posts__categorieContainer__categorie" name="categorie" id="categorie">
-            <option value="All">All</option>
-            <option value="lifestyle">lifestyle</option>
-            <option value="sport">sport</option>
-            <option value="health">health</option>
-            <option value="science">science</option>
+          <select class="postsContainer__posts__categorieContainer__categorie" value="all" name="categorie" id="categorie" onchange="filterCategorie(this.value)">
+            <option value="all">All</option>
+            <option value="lifestyle" >lifestyle</option>
+            <option value="sport" >sport</option>
+            <option value="health" >health</option>
+            <option value="science" >science</option>
           </select>
+          <?php 
+             if(isset($_GET['categorie'])){
+              $categorie = $_GET['categorie'];
+                  switch ($categorie){
+                   case "lifestyle":
+                   case "sport":
+                   case "health":
+                   case "science": 
+                    $sqlQuery = "SELECT * FROM posts where categorie = '$categorie' ";
+                    $postsStatement = $db->prepare($sqlQuery);
+                    $postsStatement->execute();
+                    $posts = $postsStatement->fetchAll();
+                    $totalPosts = count($posts);
+                    $postsPerPage = 4;
+                    $totalPages = ceil($totalPosts/$postsPerPage);
+                   break;
+                  }
+             } else{
+                   $sqlQuery = "SELECT * FROM posts  ";
+                   $postsStatement = $db->prepare($sqlQuery);
+                   $postsStatement->execute();
+                   $posts = $postsStatement->fetchAll();
+                   $totalPosts = count($posts);
+                   $postsPerPage = 4;
+                   $totalPages = ceil($totalPosts/$postsPerPage);
+             }
+          ?>
           </div>
-            <?php  foreach ($displayPosts as $post) {
+            <?php  
+            $currentPage = isset($_GET['page'])?$_GET['page']:1;
+            $startIndex = ($currentPage - 1) * $postsPerPage;
+            $displayPosts = array_slice($posts, $startIndex, $postsPerPage);              
+            foreach ($displayPosts as $post) {
            ?>
         <article class="postsContainer__posts__post" onclick="postPage(<?php echo($post['idPost']);?>)">
           <div class="postsContainer__posts__post__img">
