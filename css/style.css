@@ -474,7 +474,6 @@
 .postsContainer__posts__categorieContainer__categorieLabel {
   padding-left: 15px;
   border-radius: 5px;
-  margin-left: 30px;
   border-left: 5px solid #482e21;
   font-size: 30px;
 }
@@ -571,15 +570,18 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
   padding: 15px;
   font-family: "Playfair Display", serif;
 }
 .contactContainer__img {
-  width: 500px;
+  min-width: 300px;
+  max-width: 500px;
 }
 .contactContainer__img img {
   width: 100%;
   object-fit: cover;
+  height: auto;
 }
 .contactContainer__container {
   display: flex;
@@ -595,7 +597,8 @@
   border: 2px solid black;
   display: flex;
   border-radius: 10px;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
   padding: 10px;
 }
@@ -603,6 +606,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 .contactContainer__container__contact__form input {
   width: 200px;
@@ -741,6 +745,19 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  #aboutHeader {
+    background-color: #482e21;
+    text-align: center;
+  }
+  #aboutHeader h1 {
+    margin: 0;
+    font-size: 50px;
+    padding: 30px;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 5px;
+  }
+}
 body {
   z-index: 99;
   padding: 0;

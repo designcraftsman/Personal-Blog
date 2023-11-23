@@ -59,17 +59,18 @@
           </div>
         </article>
       <?php } ?>
-    </main>
-    <?php include('aside.php'); ?>
-  </div>
-
-  <div class="pagination">
+      <div class="pagination">
     <?php
       for ($i = 1; $i <= $totalPages; $i++) {
           echo "<a href='?page=$i&categorie=$selectedCategory'" . ($i == $currentPage ? " class='active'" : "") . ">$i</a>";
       }
     ?>
   </div>
+    </main>
+    <?php include('aside.php'); ?>
+  </div>
+
+  
 
   <?php include('footer.php'); ?>
   <script src="js/script.js"></script>
