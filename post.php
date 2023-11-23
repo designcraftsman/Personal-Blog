@@ -2,11 +2,22 @@
 <body>
 <?php include('connection.php');
     $id = $_GET['id']; 
-    $sqlQuery = "SELECT * FROM posts WHERE idPost = :id";
+    $cookie= 'viewedPost'.$id;
+    $sqlQuery = "SELECT * FROM posts WHERE idPost = :id;";
     $postStatement = $db->prepare($sqlQuery);
     $postStatement->bindParam('id', $id, PDO::PARAM_INT); 
     $postStatement->execute();
     $post = $postStatement->fetch(PDO::FETCH_ASSOC);
+    if(!isset($_COOKIE[$cookie])){
+        $Views = $post['postViews'] + 1;
+        $insertQuery = "UPDATE posts SET postViews = :postViews WHERE idPost = :postId";
+        $insertView = $db->prepare($insertQuery);
+        $insertView ->execute([
+            'postId'=>$id,
+            'postViews'=>$Views,
+        ]);
+        setcookie($cookie,1,time()+3600*24*30);
+    }
     ?>
 <?php include("navbar.php"); ?>
 <h1 class="postTitle"><?php echo($post['postTitle']); ?></h1>

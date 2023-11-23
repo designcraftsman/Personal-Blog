@@ -6,23 +6,32 @@
     $postsStatement = $db->prepare($sqlQuery);
     $postsStatement->execute();
     $posts = $postsStatement->fetchAll();
+    $date = date('y-m-d');
+    $currentDate = new DateTime($date);
+    $todayPosts = array_filter($posts,function($post)use($currentDate){
+            $postDate = new DateTime($post['postDate']);
+            $dateGap = $currentDate->diff($postDate);
+            $minutesGap = $dateGap->format('%i');
+            return $minutesGap <= 20160 ;
+    }); 
+    $TodayPosts = array_slice($todayPosts, 0, 3);
 ?>
 <section id="home">
     <div class="container">
         <article class="container__left">
-            <a href="#">Lifestyle</a>
-            <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2 class="container__left__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
+            <a href="#"><?php echo($TodayPosts[0]['categorie']); ?></a>
+            <img src="<?php echo($TodayPosts[0]['postImg']); ?>" alt="">
+            <h2 class="container__left__title"><?php echo($TodayPosts[0]['postTitle']); ?></h2>
         </article>
         <article class="container__rightTop">
-            <a href="#">Lifestyle</a>
-            <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2 class="container__rightTop__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
+            <a href="#"><?php echo($TodayPosts[1]['categorie']); ?></a>
+            <img src="<?php echo($TodayPosts[1]['postImg']); ?>" alt="">
+            <h2 class="container__rightTop__title"><?php echo($TodayPosts[1]['postTitle']); ?></h2>
         </article>
         <article class="container__rightBottom">
-            <a href="#">Lifestyle</a>
-            <img src="https://images.pexels.com/photos/106686/pexels-photo-106686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2 class="container__rightBottom__title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</h2>
+            <a href="#"><?php echo($TodayPosts[2]['categorie']); ?></a>
+            <img src="<?php echo($TodayPosts[2]['postImg']); ?>" alt="">
+            <h2 class="container__rightBottom__title"><?php echo($TodayPosts[2]['postTitle']); ?></h2>
         </article>
     </div>
 </section>
