@@ -237,6 +237,7 @@
   grid-row: span 2;
   max-height: 100%;
   position: relative;
+  cursor: pointer;
 }
 .container__left img {
   width: 100%;
@@ -266,6 +267,7 @@
 }
 .container__rightTop {
   position: relative;
+  cursor: pointer;
 }
 .container__rightTop img {
   width: 100%;
@@ -295,6 +297,7 @@
 }
 .container__rightBottom {
   position: relative;
+  cursor: pointer;
 }
 .container__rightBottom img {
   width: 100%;
@@ -705,8 +708,8 @@
 }
 
 .postTitle {
-  padding: 20px 30px;
-  max-width: 100%;
+  padding: 10px;
+  padding-left: 10%;
   margin: 0;
   font-size: 50px;
   font-family: "Playfair Display", serif;

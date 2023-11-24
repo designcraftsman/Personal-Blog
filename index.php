@@ -18,17 +18,17 @@
 ?>
 <section id="home">
     <div class="container">
-        <article class="container__left">
+        <article class="container__left" onclick="postPage(<?php echo($TodayPosts[0]['idPost']); ?> ) ">
             <a href="#"><?php echo($TodayPosts[0]['categorie']); ?></a>
             <img src="<?php echo($TodayPosts[0]['postImg']); ?>" alt="">
             <h2 class="container__left__title"><?php echo($TodayPosts[0]['postTitle']); ?></h2>
         </article>
-        <article class="container__rightTop">
+        <article class="container__rightTop" onclick="postPage(<?php echo($TodayPosts[1]['idPost']); ?> ) ">
             <a href="#"><?php echo($TodayPosts[1]['categorie']); ?></a>
             <img src="<?php echo($TodayPosts[1]['postImg']); ?>" alt="">
             <h2 class="container__rightTop__title"><?php echo($TodayPosts[1]['postTitle']); ?></h2>
         </article>
-        <article class="container__rightBottom">
+        <article class="container__rightBottom" onclick="postPage(<?php echo($TodayPosts[2]['idPost']); ?> ) ">
             <a href="#"><?php echo($TodayPosts[2]['categorie']); ?></a>
             <img src="<?php echo($TodayPosts[2]['postImg']); ?>" alt="">
             <h2 class="container__rightBottom__title"><?php echo($TodayPosts[2]['postTitle']); ?></h2>
