@@ -48,8 +48,8 @@
                 <article class="trendingPosts__Posts__post"  onclick="postPage(<?php echo($post['idPost']); ?> ) " > 
                     <h3><?php echo($post['postTitle']); ?></h3>
                     <img src="<?php echo($post['postImg']); ?>" alt="">   
-                    <p class="trendingPosts__Posts__post__categorie"><a class="trendingPosts__Posts__post__categorie__select" href="#"><?php echo($post['categorie']); ?></a> - Posted on <?php echo($post['postDate']); ?></p> 
-                    <p><?php echo($post['postContent']); ?></p>    
+                    <p class="trendingPosts__Posts__post__categorie"><a class="trendingPosts__Posts__post__categorie__select" href="blog.php?categorie=<?php echo urlencode($post['categorie']);?>"><?php echo($post['categorie']); ?></a> - Posted on <?php echo($post['postDate']); ?></p> 
+                    <p class="trendingPosts__Posts__post__p"><?php echo($post['postContent']); ?></p>    
                     <a class="trendingPosts__Posts__post__readMore" onclick="postPage(<?php echo($post['idPost']); ?> ) ">Read More</a>
                 </article>
             <?php } ?>

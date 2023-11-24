@@ -143,7 +143,7 @@
                 margin: 10px 0;
                 &__select{  
                     background-color: $style;
-                    padding: 10px;
+                    padding:5px;
                     border-radius: 10px;
                     text-decoration: none;
                     color:$text;
@@ -152,18 +152,18 @@
             img {
                 object-fit: cover;
                 width: 100%;
-                max-height: 500px; 
+                max-height: 400px; 
             }
             h3{ 
                 font-size: xx-large;
                 margin: 0 0;
             }
-            p{
+            &__p{
                 max-height: 65px;
                 overflow: hidden;
             }
             &__readMore{
-                border: 2px solid black;
+                border: 1px solid black;
                 color:black;
                 text-decoration: none;
                 padding: 3px;

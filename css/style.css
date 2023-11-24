@@ -365,7 +365,7 @@
 }
 .trendingPosts__Posts__post__categorie__select {
   background-color: #482e21;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -373,18 +373,18 @@
 .trendingPosts__Posts__post img {
   object-fit: cover;
   width: 100%;
-  max-height: 500px;
+  max-height: 400px;
 }
 .trendingPosts__Posts__post h3 {
   font-size: xx-large;
   margin: 0 0;
 }
-.trendingPosts__Posts__post p {
+.trendingPosts__Posts__post__p {
   max-height: 65px;
   overflow: hidden;
 }
 .trendingPosts__Posts__post__readMore {
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   text-decoration: none;
   padding: 3px;
