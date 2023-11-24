@@ -11,6 +11,13 @@
             }
         }
     }
+    .trendingPosts{
+        &__Posts{
+            &__post{
+                margin-bottom: 50px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 708px) and (max-width: 1090px) {

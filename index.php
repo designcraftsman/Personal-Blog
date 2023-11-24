@@ -15,6 +15,7 @@
             return $minutesGap <= 20160 ;
     }); 
     $TodayPosts = array_slice($todayPosts, 0, 3);
+    $posts = array_slice($todayPosts, 0, 6)
 ?>
 <section id="home">
     <div class="container">
@@ -45,10 +46,11 @@
         <div class="trendingPosts__Posts">
             <?php foreach($posts as $post){ ?>
                 <article class="trendingPosts__Posts__post"  onclick="postPage(<?php echo($post['idPost']); ?> ) " > 
-                <img src="<?php echo($post['postImg']); ?>" alt="">
-                <a href="#"><?php echo($post['categorie']); ?></a>    
-                <h3><?php echo($post['postTitle']); ?></h3>
-                <p><?php echo($post['postContent']); ?></p>    
+                    <h3><?php echo($post['postTitle']); ?></h3>
+                    <img src="<?php echo($post['postImg']); ?>" alt="">   
+                    <p class="trendingPosts__Posts__post__categorie"><a class="trendingPosts__Posts__post__categorie__select" href="#"><?php echo($post['categorie']); ?></a> - Posted on <?php echo($post['postDate']); ?></p> 
+                    <p><?php echo($post['postContent']); ?></p>    
+                    <a class="trendingPosts__Posts__post__readMore" onclick="postPage(<?php echo($post['idPost']); ?> ) ">Read More</a>
                 </article>
             <?php } ?>
         </div>

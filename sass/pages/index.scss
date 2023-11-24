@@ -127,8 +127,8 @@
 .trendingPosts {
     font-family: 'Playfair Display', serif;
     grid-column: span 2;
+    margin-top: 50px;
     &__Posts {
-        margin-top:10px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -136,31 +136,41 @@
         &__post {
             cursor: pointer;
             width: 350px; 
-            margin-top: 20px;
             background-color: white;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            a{  
-                background-color: $style;
-                padding: 10px;
-                border-radius: 10px;
-                text-decoration: none;
-                color:$text;
-                display: inline;
+            &__categorie{  
+                margin: 10px 0;
+                &__select{  
+                    background-color: $style;
+                    padding: 10px;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    color:$text;
+                }
             }
             img {
                 object-fit: cover;
-                border-top-right-radius: 10%;
-                border-top-left-radius: 10%;
                 width: 100%;
-                height: 300px; 
-                margin-bottom: 10px;
+                max-height: 500px; 
             }
-            h3{
-                margin-bottom: 0;
+            h3{ 
+                font-size: xx-large;
+                margin: 0 0;
             }
             p{
-                margin-top: 5px;
+                max-height: 65px;
+                overflow: hidden;
+            }
+            &__readMore{
+                border: 2px solid black;
+                color:black;
+                text-decoration: none;
+                padding: 3px;
+                &:hover{
+                    background-color: black;
+                    color:white;
+                }
             }
         }
     }
