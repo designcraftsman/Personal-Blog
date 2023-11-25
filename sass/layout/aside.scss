@@ -14,7 +14,7 @@
     &__recentPosts{
         display:flex;
         flex-flow:row wrap;
-        justify-content: start;
+        justify-content: space-between;
         align-items: start;
         &__post{
             cursor: pointer;
@@ -45,51 +45,37 @@
                 }
                 h3{
                     margin: 5px 0;
-                    width: 250px;
+                    width: 200px;
                     font-weight: light;
                 }
                 p{  
                     margin: 0;
-                    width: 250px;
+                    width: 200px;
                 }
             }
         }
     }
     &__categories{
         display:flex;
-        flex-flow:column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        &__title{
-            align-self: flex-start;
-            margin: 0;
-            margin-left: 40px;
-            font-size: 25px;
-            padding-left: 15px;
-            border-radius: 5px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            border-left: 5px solid $style;
-        }
+        flex-flow:row wrap;
+        justify-content:baseline;
         &__categorie{
-            margin: 5px;
-            width: 60%;
+            width: 40%;
+            height: 80px;
+            margin: 15px 5px;
             cursor: pointer;
-            &:hover{
-                background-color: $style;
+            position: relative;
+            img{
+                 border-radius: 10px;
+                width: 100%;
+                object-fit: cover;
             }
-            &__symbol{
-                font-family: none;
-                font-size: 25px;
-                font-weight: bolder;
-            }
-            display:flex;
-            justify-content: space-between;
-            font-size: 20px;
-            padding: 10px;
-            &__number{
-                margin-left:5px;
+            &__title{
+                color:$text;
+                left: 50px;
+                top: 10px;
+                position: absolute;
+                text-align: center;
             }
         }
     }

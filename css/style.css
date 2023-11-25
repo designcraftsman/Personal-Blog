@@ -119,7 +119,7 @@
 .asideSection__recentPosts {
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
 }
 .asideSection__recentPosts__post {
@@ -153,50 +153,36 @@
 }
 .asideSection__recentPosts__post__content h3 {
   margin: 5px 0;
-  width: 250px;
+  width: 200px;
   font-weight: light;
 }
 .asideSection__recentPosts__post__content p {
   margin: 0;
-  width: 250px;
+  width: 200px;
 }
 .asideSection__categories {
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.asideSection__categories__title {
-  align-self: flex-start;
-  margin: 0;
-  margin-left: 40px;
-  font-size: 25px;
-  padding-left: 15px;
-  border-radius: 5px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  border-left: 5px solid #482e21;
+  flex-flow: row wrap;
+  justify-content: baseline;
 }
 .asideSection__categories__categorie {
-  margin: 5px;
-  width: 60%;
+  width: 40%;
+  height: 80px;
+  margin: 15px 5px;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  padding: 10px;
+  position: relative;
 }
-.asideSection__categories__categorie:hover {
-  background-color: #482e21;
+.asideSection__categories__categorie img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
 }
-.asideSection__categories__categorie__symbol {
-  font-family: none;
-  font-size: 25px;
-  font-weight: bolder;
-}
-.asideSection__categories__categorie__number {
-  margin-left: 5px;
+.asideSection__categories__categorie__title {
+  color: white;
+  left: 50px;
+  top: 10px;
+  position: absolute;
+  text-align: center;
 }
 
 #footer {
