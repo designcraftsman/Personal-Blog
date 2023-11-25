@@ -6,7 +6,7 @@
     $i = 0;
 ?>
 <aside class="asideSection">
-    <h2 class="asideSection__recentPosts__title">Recent Posts</h2>        
+    <h2 class="asideSection__title">Recent Posts</h2>        
     <div class="asideSection__recentPosts">
             <?php foreach($posts as $post){?>
             <article class="asideSection__recentPosts__post" onclick="postPage(<?php echo($post['idPost']); ?> ) ">
