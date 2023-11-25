@@ -5,12 +5,12 @@
 
 .container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     grid-template-rows:35vh 35vh ;
     grid-gap: 15px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     &__left {
         grid-row: span 2;
         max-height: 100%;
@@ -109,12 +109,13 @@
     }
 }
 #posts{
+    margin-top: 30px;
+    padding: 10px;
     h2{
-        font-size: 30px;
+        font-size: 25px;
+        margin: 0;
         padding: 10px;
-        margin-bottom: 0;
-        margin-top: 50px;
-        margin-left: 20px;
+        font-weight: lighter;
         border-radius: 5px;
         border-left: 5px solid $style;
     }
@@ -127,7 +128,6 @@
 .trendingPosts {
     font-family: 'Playfair Display', serif;
     grid-column: span 2;
-    margin-top: 50px;
     &__Posts {
         display: flex;
         flex-flow: row wrap;
@@ -135,7 +135,8 @@
         align-items: center;
         &__post {
             cursor: pointer;
-            width: 350px; 
+            margin: 40px 0; 
+            width: 360px; 
             background-color: white;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
@@ -152,11 +153,11 @@
             img {
                 object-fit: cover;
                 width: 100%;
-                max-height: 400px; 
+                height: 400px;
             }
             h3{ 
-                font-size: xx-large;
-                margin: 0 0;
+                font-size:x-large; 
+                margin: 5px 0;
             }
             &__p{
                 max-height: 65px;
