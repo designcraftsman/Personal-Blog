@@ -20,9 +20,12 @@
 <section id="home">
     <div class="container">
         <article class="container__left" onclick="postPage(<?php echo($TodayPosts[0]['idPost']); ?> ) ">
-            <a href="#"><?php echo($TodayPosts[0]['categorie']); ?></a>
             <img src="<?php echo($TodayPosts[0]['postImg']); ?>" alt="">
-            <h2 class="container__left__title"><?php echo($TodayPosts[0]['postTitle']); ?></h2>
+            <div class="container__left__info">
+                <a href="#"><?php echo($TodayPosts[0]['categorie']); ?></a>
+                <h2 class="container__left__info__title"><?php echo($TodayPosts[0]['postTitle']); ?></h2>
+                <p class="container__left__info__additional"><?php echo($TodayPosts[0]['postDate']); ?></p>
+            </div>
         </article>
         <article class="container__rightTop" onclick="postPage(<?php echo($TodayPosts[1]['idPost']); ?> ) ">
             <a href="#"><?php echo($TodayPosts[1]['categorie']); ?></a>

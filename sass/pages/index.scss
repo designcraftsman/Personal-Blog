@@ -8,7 +8,7 @@
     grid-template-columns: 49% 49%;
     grid-template-rows:35vh 35vh ;
     grid-gap: 15px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     font-weight: bolder;
     padding: 10px 20px;
     &__left {
@@ -22,27 +22,29 @@
             object-fit: cover;
             border-radius: 10px;
         }
-    
-        a {
-            position: absolute;
-            top: 10px;
-            right: 30px;
-            background-color: $style;
-            padding: 10px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: $text;
-            display: inline-block; 
-        }
-    
-        &__title {
+        &__info{
             position:absolute;
-            bottom: 10px;
+            bottom: 100px;
             left: 20px;
             color: $text2; 
-            max-width: 90%;
-            overflow: hidden;
             max-height: 20%;
+            a {
+            
+                background-color: $style;
+                padding: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: $text;
+                display: inline-block; 
+            }
+            &__title{
+                margin: 0;
+                font-size: 40px;
+            }
+            &__additional{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:large;
+            }
         }
     }
 
@@ -128,6 +130,7 @@
     grid-template-rows:repeat(auto-fit,minmax(200px,1fr));
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-gap: 50px;
+   
 }
 .trendingPosts { 
     font-family: 'Playfair Display', serif;

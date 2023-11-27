@@ -11,10 +11,13 @@
             }
         }
     }
+    #trendingPosts{
+        grid-gap:0;
+    }
     .trendingPosts{
         &__Posts{
             &__post{
-                margin-bottom: 50px;
+                width: 300px;
             }
         }
     }
