@@ -274,10 +274,20 @@
   height: 100%;
   object-fit: cover;
 }
-.container__rightTop a {
+.container__rightTop__info {
   position: absolute;
-  top: 10px;
-  right: 30px;
+  bottom: 100px;
+  left: 20px;
+  color: white;
+  max-height: 20%;
+}
+.container__rightTop__info__title {
+  color: white;
+  max-width: 90%;
+  overflow: hidden;
+  max-height: 40%;
+}
+.container__rightTop__info a {
   background-color: #482e21;
   padding: 10px;
   border-radius: 10px;
@@ -285,14 +295,9 @@
   color: white;
   display: inline;
 }
-.container__rightTop__title {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  color: white;
-  max-width: 90%;
-  overflow: hidden;
-  max-height: 40%;
+.container__rightTop__info__additional {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
 }
 .container__rightBottom {
   position: relative;
@@ -304,10 +309,20 @@
   height: 100%;
   object-fit: cover;
 }
-.container__rightBottom a {
+.container__rightBottom__info {
   position: absolute;
-  top: 10px;
-  right: 30px;
+  bottom: 100px;
+  left: 20px;
+  color: white;
+  max-height: 20%;
+}
+.container__rightBottom__info__title {
+  color: white;
+  max-width: 90%;
+  overflow: hidden;
+  max-height: 40%;
+}
+.container__rightBottom__info a {
   background-color: #482e21;
   padding: 10px;
   border-radius: 10px;
@@ -315,14 +330,9 @@
   color: white;
   display: inline;
 }
-.container__rightBottom__title {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  color: white;
-  max-width: 90%;
-  overflow: hidden;
-  max-height: 40%;
+.container__rightBottom__info__additional {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
 }
 
 #posts {
