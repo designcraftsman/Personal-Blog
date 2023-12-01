@@ -1,3 +1,10 @@
+.contact-h1{ 
+    color:$style;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin: 10px;
+}
 .contactContainer{
     display:flex;
     justify-content:space-evenly;
@@ -15,18 +22,13 @@
         }
     }
     &__container{
+        margin: 15px ;
         display: flex;
         flex-flow:column;
         align-items: center;
-        h1{ 
-            color:$style;
-            font-size: 50px;
-            text-align: center;
-        }
         &__contact{
             border: 2px solid black;
             display: flex;
-            border-radius: 10px;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;

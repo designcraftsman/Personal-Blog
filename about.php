@@ -2,9 +2,7 @@
 
 <body>
     <?php include('navbar.php'); ?>
-   <section id="aboutHeader">
-        <h1>About Us</h1>
-   </section>
+    <h1 class="about-h1">About Us</h1>
    <section id="aboutContent">
     <div class="aboutContent">
         <div class="aboutContent__img">
