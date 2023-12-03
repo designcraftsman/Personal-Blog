@@ -781,6 +781,25 @@
   line-height: 30px;
   word-spacing: 3px;
 }
+.articleContent__comments__title {
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Playfair Display", serif;
+}
+.articleContent__comments__comment {
+  display: flex;
+  align-items: center;
+}
+.articleContent__comments__comment img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.articleContent__comments__comment__info__p {
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+}
 
 @media screen and (max-width: 1024px) {
   #aboutHeader {

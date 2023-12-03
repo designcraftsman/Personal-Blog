@@ -28,6 +28,17 @@
     </div>
     <a href="#"><?php echo($post['categorie']); ?></a>
     <p><?php echo($post['postContent']);?></p>
+    <div class="articleContent__comments">
+        <h2 class="articleContent__comments__title">Comments</h2>
+        <div class="articleContent__comments__comment">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <div class="articleContent__comments__comment__info">
+                <p class="articleContent__comments__comment__info__p">Sed ac lorem felis. Ut in odio lorem. Quisque magna dui, maximus ut commodo sed, vestibulum ac nibh. Aenean a tortor in sem tempus auctor</p>
+                <h3 class="articleContent__comments__comment__info__user">Steven</h3>
+                <p class="articleContent__comments__comment__info__date">2021-07-25</p>
+            </div>
+        </div>
+</div>
 </main>    
 <?php
  include('aside.php');   ?>
