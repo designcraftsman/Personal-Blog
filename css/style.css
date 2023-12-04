@@ -765,7 +765,7 @@
   margin: 0 auto;
   display: block;
 }
-.articleContent a {
+.articleContent__categorie {
   background-color: #482e21;
   padding: 10px;
   border-radius: 10px;
@@ -775,20 +775,25 @@
   color: white;
   display: inline-block;
 }
-.articleContent p {
+.articleContent__p {
   font-family: "Times New Roman", Times, serif;
   font-size: x-large;
   line-height: 30px;
   word-spacing: 3px;
 }
 .articleContent__comments__title {
-  font-size: 30px;
+  font-size: 25px;
+  border-bottom: 3px solid #482e21;
+  border-radius: 4px;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: lighter;
-  font-family: "Playfair Display", serif;
+  display: inline-block;
 }
 .articleContent__comments__comment {
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 .articleContent__comments__comment img {
   width: 120px;
@@ -796,9 +801,32 @@
   border-radius: 50%;
   object-fit: cover;
 }
-.articleContent__comments__comment__info__p {
+.articleContent__comments__comment__content {
+  margin: 10px;
+}
+.articleContent__comments__comment__content__p {
   font-family: "Playfair Display", serif;
   font-weight: lighter;
+}
+.articleContent__comments__comment__content__info {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.articleContent__comments__comment__content__info__about__user {
+  display: inline-block;
+  margin: 5px;
+}
+.articleContent__comments__comment__content__info__about__date {
+  display: inline-block;
+}
+.articleContent__comments__comment__content__info__reply__btn {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
 }
 
 @media screen and (max-width: 1024px) {

@@ -29,7 +29,7 @@
             display: block;
         }
     }
-    a{
+    &__categorie{
         background-color: $style;
         padding: 10px;
         border-radius: 10px;
@@ -39,7 +39,7 @@
         color:$text;
         display: inline-block;
     }
-    p{  
+    &__p{  
         font-family:'Times New Roman', Times, serif;
         font-size: x-large;
         line-height: 30px;
@@ -47,13 +47,18 @@
     }
     &__comments{
         &__title{
-            font-size: 30px;
+            font-size: 25px;
+            border-bottom: 3px solid $style;
+            border-radius: 4px;
+            padding:5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: lighter;
-            font-family: 'Playfair Display', serif;
+            display: inline-block;
         }
         &__comment{
             display: flex;
             align-items: center;
+            margin: 20px 0;
             img{
                 width: 120px;
                 height: 120px;
@@ -61,13 +66,36 @@
                 object-fit: cover;
 
             }
-            &__info{
+            &__content{
+                margin: 10px;
                 &__p{
-
                     font-family: 'Playfair Display', serif;
                     font-weight: lighter;
                 }
-
+                &__info{
+                    display:flex;
+                    align-items: center;
+                    flex-flow: row;
+                    justify-content:space-between;
+                    &__about{
+                    &__user{
+                        display: inline-block;
+                        margin: 5px;
+                    }
+                    &__date{
+                        display: inline-block;
+                    }
+                }
+                &__reply{
+                    &__btn{
+                        text-decoration: none;
+                        color: gray;
+                        font-size: 20px;
+                        font-family: 'Playfair Display', serif;
+                        font-style: italic;
+                    }
+                }
+                }
             }
         }
     }
