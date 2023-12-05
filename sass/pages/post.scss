@@ -46,6 +46,15 @@
         word-spacing: 3px;
     }
     &__comments{
+        &__replyForm{
+            &__input{
+                width: 200px;
+                padding:20px;
+                font-size: 16px;
+                font-family: 'Playfair Display', serif;
+                margin: 10px;
+            }
+        }
         &__title{
             font-size: 25px;
             border-bottom: 3px solid $style;

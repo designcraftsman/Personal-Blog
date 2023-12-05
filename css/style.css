@@ -781,6 +781,13 @@
   line-height: 30px;
   word-spacing: 3px;
 }
+.articleContent__comments__replyForm__input {
+  width: 200px;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  margin: 10px;
+}
 .articleContent__comments__title {
   font-size: 25px;
   border-bottom: 3px solid #482e21;

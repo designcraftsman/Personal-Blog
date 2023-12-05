@@ -46,36 +46,13 @@
                 </div>
             </div>
         </div>
-        <div class="articleContent__comments__comment">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <div class="articleContent__comments__comment__content">
-                <p class="articleContent__comments__comment__content__p">Sed ac lorem felis. Ut in odio lorem. Quisque magna dui, maximus ut commodo sed, vestibulum ac nibh. Aenean a tortor in sem tempus auctor</p>
-                <div class="articleContent__comments__comment__content__info">
-                    <div class="articleContent__comments__comment__content__info__about">
-                        <h3 class="articleContent__comments__comment__content__info__about__user">Steven</h3>
-                        <p class="articleContent__comments__comment__content__info__about__date">25 july 2021 at 3:12 pm</p>
-                    </div>
-                    <div class="articleContent__comments__comment__content__info__reply">
-                        <a class="articleContent__comments__comment__content__info__reply__btn" href="#">Reply</a>
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <div class="articleContent__comments__comment">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <div class="articleContent__comments__comment__content">
-                <p class="articleContent__comments__comment__content__p">Sed ac lorem felis. Ut in odio lorem. Quisque magna dui, maximus ut commodo sed, vestibulum ac nibh. Aenean a tortor in sem tempus auctor</p>
-                <div class="articleContent__comments__comment__content__info">
-                    <div class="articleContent__comments__comment__content__info__about">
-                        <h3 class="articleContent__comments__comment__content__info__about__user">Steven</h3>
-                        <p class="articleContent__comments__comment__content__info__about__date">25 july 2021 at 3:12 pm</p>
-                    </div>
-                    <div class="articleContent__comments__comment__content__info__reply">
-                        <a class="articleContent__comments__comment__content__info__reply__btn" href="#">Reply</a>
-                    </div>  
-                </div>
-            </div>
-        </div>
+        <h2 class="articleContent__comments__title">Leave a Reply</h2>
+        <form class="articleContent__comments__replyForm" method="POST">
+                <input class="articleContent__comments__replyForm__input" type="text" name="fullName" placeholder="Full Name">
+                <input class="articleContent__comments__replyForm__input" type="text" name="email" placeholder="E-mail">
+                <input class="articleContent__comments__replyForm__input" type="text" name="comment" placeholder="Message">
+                <button class="articleContent__comments__replyForm__btn" type="submit">Save</button>
+        </form>
 </div>
 </main>    
 <?php
