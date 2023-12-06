@@ -782,11 +782,24 @@
   word-spacing: 3px;
 }
 .articleContent__comments__replyForm__input {
-  width: 200px;
-  padding: 20px;
+  width: 245px;
+  padding: 10px;
   font-size: 16px;
   font-family: "Playfair Display", serif;
-  margin: 10px;
+  margin: 5px;
+}
+.articleContent__comments__replyForm textarea {
+  resize: none;
+  width: 100%;
+}
+.articleContent__comments__replyForm__btn {
+  width: 230px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  margin-right: -1;
+  background-color: #482e21;
+  color: white;
 }
 .articleContent__comments__title {
   font-size: 25px;

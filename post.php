@@ -48,10 +48,10 @@
         </div>
         <h2 class="articleContent__comments__title">Leave a Reply</h2>
         <form class="articleContent__comments__replyForm" method="POST">
-                <input class="articleContent__comments__replyForm__input" type="text" name="fullName" placeholder="Full Name">
-                <input class="articleContent__comments__replyForm__input" type="text" name="email" placeholder="E-mail">
-                <input class="articleContent__comments__replyForm__input" type="text" name="comment" placeholder="Message">
-                <button class="articleContent__comments__replyForm__btn" type="submit">Save</button>
+                <textarea class="articleContent__comments__replyForm__input" rows="5" cols="60" name="text" placeholder="Write your comment here..."></textarea>
+                <input class="articleContent__comments__replyForm__input" type="text" name="fullName" placeholder="Your full name">
+                <input class="articleContent__comments__replyForm__input" type="text" name="email" placeholder="E-mail adress">
+                <button class="articleContent__comments__replyForm__btn" type="submit">Post Comment</button>
         </form>
 </div>
 </main>    

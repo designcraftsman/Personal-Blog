@@ -48,11 +48,24 @@
     &__comments{
         &__replyForm{
             &__input{
-                width: 200px;
-                padding:20px;
+                width: 245px;
+                padding:10px;
                 font-size: 16px;
                 font-family: 'Playfair Display', serif;
-                margin: 10px;
+                margin: 5px;
+            }
+            textarea{
+                resize: none;
+                width: 100%;
+            }
+            &__btn{
+                width: 230px;
+                padding: 10px;
+                font-size: 18px;
+                font-family: 'Playfair Display', serif;
+                margin-right: -1;
+                background-color: $style;
+                color:$text;
             }
         }
         &__title{
