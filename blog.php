@@ -58,20 +58,18 @@
             <p><?php echo $post['postContent']; ?></p>
           </div>
         </article>
-      <?php } ?>
+      <?php } if($totalPosts > 5){?>
       <div class="pagination">
-    <?php
-      for ($i = 1; $i <= $totalPages; $i++) {
-          echo "<a href='?page=$i&categorie=$selectedCategory'" . ($i == $currentPage ? " class='active'" : "") . ">$i</a>";
-      }
-    ?>
-  </div>
+        <?php
+            for ($i = 1; $i <= $totalPages; $i++) {
+             echo "<a href='?page=$i&categorie=$selectedCategory'" . ($i == $currentPage ? " class='active'" : "") . ">$i</a>";
+            }
+            ?>
+      </div>
+      <?php }?>
     </main>
     <?php include('aside.php'); ?>
   </div>
-
-  
-
   <?php include('footer.php'); ?>
   <script src="js/script.js"></script>
 </body>
