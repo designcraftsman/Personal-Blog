@@ -29,7 +29,7 @@
    }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .container{
         &__left{
             grid-column: span 2;
@@ -59,13 +59,13 @@
                 }
             }
         }
-        &__righBottom{
+        &__rightBottom{
             &__info{
                 a{
                     font-size: 12px;
                 }
                 &__title{
-                    font-size: 10px;     
+                    font-size: 20px;     
                 }
                 &__additional{
                     font-size: 15px;
