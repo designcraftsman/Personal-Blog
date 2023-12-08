@@ -1,6 +1,5 @@
-<?php include('head.php'); ?>
-<body>
-<?php include('connection.php');
+<?php 
+    include('connection.php');
     $id = $_GET['id']; 
     $cookie= 'viewedPost'.$id;
     $sqlQuery = "SELECT * FROM posts WHERE idPost = :id;";
@@ -19,6 +18,29 @@
         setcookie($cookie,1,time()+3600*24*30);
     }
     ?>
+<?php   
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {    
+            if(!isset($_POST['commentMessage']) || !isset($_POST['memberName']) || !isset($_POST['memberEmail'])){
+                echo('Error.Please fill in all the fields ! ');
+            }else{
+                $commentMessage = $_POST['commentMessage'];
+                $memberName = $_POST['memberName'];
+                $memberEmail = $_POST['memberEmail'];
+                $sqlQuery = 'INSERT INTO comments(commentMessage, postId, memberEmail,memberName) VALUES (:commentMessage, :postId ,:memberEmail, :memberName)';
+                $insertComment = $db->prepare($sqlQuery);
+                $insertComment->execute([
+                    'commentMessage' => $commentMessage,
+                    'postId' => $id,
+                    'memberEmail' => $memberEmail,
+                    'memberName' => $memberName, 
+                ]);
+                header("Location: post.php?id=" . $id);
+                exit();
+            }
+        }
+?>
+<?php include('head.php'); ?>
+<body>
 <?php include("navbar.php"); ?>
 <h1 class="postTitle"><?php echo($post['postTitle']); ?></h1>
 <div class="postPage">
@@ -56,11 +78,11 @@
         </div>
         <?php }?>
         <h2 class="articleContent__comments__title">Leave a Reply</h2>
-        <form class="articleContent__comments__replyForm" action="commentInsert.php" method="POST">
+        <form class="articleContent__comments__replyForm"  method="POST">
                 <textarea class="articleContent__comments__replyForm__input" rows="5" cols="60" name="commentMessage" placeholder="Write your comment here..."></textarea>
                 <input class="articleContent__comments__replyForm__input" type="text" name="memberName" placeholder="Your full name">
                 <input class="articleContent__comments__replyForm__input" type="text" name="memberEmail" placeholder="E-mail adress">
-                <button class="articleContent__comments__replyForm__btn" type="submit">Post Comment</button>
+                <button class="articleContent__comments__replyForm__btn" id="commentSubmitBtn" type="submit">Post Comment</button>
         </form>
 </div>
 </main>    

@@ -813,6 +813,7 @@
 .articleContent__comments__comment {
   display: flex;
   align-items: center;
+  width: 100%;
   margin: 20px 0;
 }
 .articleContent__comments__comment img {
@@ -823,6 +824,7 @@
 }
 .articleContent__comments__comment__content {
   margin: 10px;
+  width: 100%;
 }
 .articleContent__comments__comment__content__p {
   font-family: "Playfair Display", serif;

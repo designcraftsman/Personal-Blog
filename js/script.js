@@ -4,3 +4,4 @@ function postPage(idPost){
 function filterCategorie(categorie){
    window.location.href="?categorie=" + categorie; 
 }
+
