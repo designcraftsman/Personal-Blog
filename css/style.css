@@ -258,11 +258,16 @@
 }
 .container__left__info__title {
   margin: 0;
-  font-size: 40px;
+  font-size: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .container__left__info__additional {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: large;
+  font-size: 20px;
+  margin: 5px;
 }
 .container__rightTop {
   position: relative;
@@ -283,9 +288,12 @@
 }
 .container__rightTop__info__title {
   color: white;
-  max-width: 90%;
+  font-size: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  max-height: 40%;
+  margin: 10px 0px;
 }
 .container__rightTop__info a {
   background-color: #482e21;
@@ -298,6 +306,7 @@
 .container__rightTop__info__additional {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: large;
+  margin: 5px;
 }
 .container__rightBottom {
   position: relative;
@@ -318,9 +327,12 @@
 }
 .container__rightBottom__info__title {
   color: white;
-  max-width: 90%;
+  font-size: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  max-height: 40%;
+  margin: 10px 0px;
 }
 .container__rightBottom__info a {
   background-color: #482e21;
@@ -331,6 +343,7 @@
   display: inline;
 }
 .container__rightBottom__info__additional {
+  margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: large;
 }
@@ -492,6 +505,39 @@
 @media screen and (min-width: 708px) and (max-width: 1090px) {
   .asideSection {
     grid-column: span 2;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container__left {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container__left__info a {
+    font-size: 12px;
+  }
+  .container__left__info__title {
+    font-size: 25px;
+  }
+  .container__left__info__additional {
+    font-size: 15px;
+  }
+  .container__rightTop__info a {
+    font-size: 12px;
+  }
+  .container__rightTop__info__title {
+    font-size: 20px;
+  }
+  .container__rightTop__info__additional {
+    font-size: 15px;
+  }
+  .container__righBottom__info a {
+    font-size: 12px;
+  }
+  .container__righBottom__info__title {
+    font-size: 10px;
+  }
+  .container__righBottom__info__additional {
+    font-size: 15px;
   }
 }
 .postsContainer {

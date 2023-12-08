@@ -29,3 +29,49 @@
    }
 }
 
+@media screen and (max-width: 800px){
+    .container{
+        &__left{
+            grid-column: span 2;
+            grid-row: span 1;
+            &__info{
+                a{
+                    font-size: 12px;
+                }
+                &__title{
+                    font-size: 25px;
+                }
+                &__additional{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__rightTop{
+            &__info{
+                a{
+                    font-size: 12px;
+                }
+                &__title{
+                    font-size: 20px;     
+                }
+                &__additional{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__righBottom{
+            &__info{
+                a{
+                    font-size: 12px;
+                }
+                &__title{
+                    font-size: 10px;     
+                }
+                &__additional{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
