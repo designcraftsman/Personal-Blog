@@ -47,23 +47,44 @@
     }
     &__comments{
         &__replyForm{
-            &__input{
-                width: 245px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            textarea{
+                box-sizing: border-box;
+                margin: 5px;
+                resize: none;
+                width: 100%;
                 padding:10px;
                 font-size: 16px;
                 font-family: 'Playfair Display', serif;
-                margin: 5px;
             }
-            textarea{
-                resize: none;
+            &__inputContainer{
                 width: 100%;
+                margin: 0;
+                padding:0;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 5px;
+                &__input{
+                    width: 46%;
+                    padding:10px;
+                    font-size: 16px;
+                    font-family: 'Playfair Display', serif;
+                }
+            }
+            &__checkContainer{
+                font-family: 'Playfair Display', serif;
+                margin: 20px 5px;
             }
             &__btn{
                 width: 230px;
                 padding: 10px;
                 font-size: 18px;
                 font-family: 'Playfair Display', serif;
-                margin-right: -1;
+                margin: 5px;
                 background-color: $style;
                 color:$text;
             }

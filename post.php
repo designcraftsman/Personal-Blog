@@ -64,11 +64,16 @@
         <div class="articleContent__comments__comment">
             <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <div class="articleContent__comments__comment__content">
+                <?php
+                    $date = new DateTime($comment['commentDate']);
+                    $formattedDate = $date->format('F d, Y');
+                    
+                ?>
                 <p class="articleContent__comments__comment__content__p"><?php echo($comment['commentMessage']); ?></p>
                 <div class="articleContent__comments__comment__content__info">
                     <div class="articleContent__comments__comment__content__info__about">
                         <h3 class="articleContent__comments__comment__content__info__about__user"><?php echo($comment['memberName']); ?></h3>
-                        <p class="articleContent__comments__comment__content__info__about__date"><?php echo($comment['commentDate']); ?></p>
+                        <p class="articleContent__comments__comment__content__info__about__date"><?php echo($formattedDate); ?></p>
                     </div>
                     <div class="articleContent__comments__comment__content__info__reply">
                         <a class="articleContent__comments__comment__content__info__reply__btn" href="#">Reply</a>
@@ -79,9 +84,15 @@
         <?php }?>
         <h2 class="articleContent__comments__title">Leave a Reply</h2>
         <form class="articleContent__comments__replyForm"  method="POST">
-                <textarea class="articleContent__comments__replyForm__input" rows="5" cols="60" name="commentMessage" placeholder="Write your comment here..."></textarea>
-                <input class="articleContent__comments__replyForm__input" type="text" name="memberName" placeholder="Your full name">
-                <input class="articleContent__comments__replyForm__input" type="text" name="memberEmail" placeholder="E-mail adress">
+                <textarea class="articleContent__comments__replyForm__input" rows="5" cols="60" name="commentMessage" placeholder="Comment"></textarea>
+                <div class="articleContent__comments__replyForm__inputContainer">
+                    <input class="articleContent__comments__replyForm__inputContainer__input" type="text" name="memberName" placeholder="Name*">
+                    <input class="articleContent__comments__replyForm__inputContainer__input" type="text" name="memberEmail" placeholder="E-mail*">
+                </div>
+                <div class="articleContent__comments__replyForm__checkContainer">
+                    <input class="articleContent__comments__replyForm__checkContainer__check" type="checkbox" name="remember" id="remember">
+                    <label for="rememberMe">Save my name and email for the next time I comment.</label>
+                </div>
                 <button class="articleContent__comments__replyForm__btn" id="commentSubmitBtn" type="submit">Post Comment</button>
         </form>
 </div>
