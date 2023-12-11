@@ -551,22 +551,27 @@
   grid-column: span 2;
 }
 .postsContainer__posts__categorieContainer {
-  margin-left: 25px;
+  background-color: #482e21;
+  text-align: center;
   padding: 10px;
 }
 .postsContainer__posts__categorieContainer__categorieLabel {
   padding-left: 15px;
-  border-radius: 5px;
-  border-left: 5px solid #482e21;
-  font-size: 30px;
+  font-size: 50px;
+  color: white;
+  font-family: "Playfair Display", serif;
 }
 .postsContainer__posts__categorieContainer__categorie {
-  background-color: #482e21;
   border-radius: 10px;
+  border: none;
   color: white;
-  padding: 2px;
-  margin: 10px;
-  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  margin: 5px;
+  font-size: 50px;
+  background-color: #482e21;
+}
+.postsContainer__posts__categorieContainer__categorie option {
+  padding: 5px;
 }
 .postsContainer__posts__post {
   cursor: pointer;

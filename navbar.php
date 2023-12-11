@@ -15,7 +15,7 @@
         <ul>
             <li class="navContainer__nav__link"><a href="index.php"><i class="fa-solid fa-house"></i> HOME</a></li>
             <li class="navContainer__nav__link"><a href="blog.php"><i class="fa-solid fa-newspaper"></i>      BLOG</a></li>
-            <li id="categorieNav" class="navContainer__nav__link"><a href=""><i class="fa-solid fa-layer-group"></i>  CATEGORIES  <i class="fa-solid fa-chevron-down"></i> </a>
+            <li id="categorieNav" class="navContainer__nav__link"><a href=""><i class="fa-solid fa-layer-group"></i>  CATEGORY  <i class="fa-solid fa-chevron-down"></i> </a>
                  <ul class="navContainer__nav__link__list">
                     <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=lifestyle">Lifestyle</a></li>
                     <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=health">Health</a></li>
