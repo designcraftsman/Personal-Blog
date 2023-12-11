@@ -559,6 +559,8 @@
   background-color: #482e21;
   text-align: center;
   padding: 10px;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 .postsContainer__posts__categorieContainer__categorieLabel {
   padding-left: 15px;

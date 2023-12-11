@@ -8,11 +8,12 @@
             background-color: $style;
             text-align: center;
             padding: 10px;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 20%;
         &__categorieLabel{
             padding-left: 15px;
             font-size: 40px;
             color:$text;
-            
             font-family: 'Playfair Display', serif;
         }
         &__categorie{

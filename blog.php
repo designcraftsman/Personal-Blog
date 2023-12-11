@@ -31,18 +31,13 @@
             array_slice($allPosts, $startIndex, $postsPerPage);
     } else {
             $displayPosts = array_slice($allPosts, $startIndex, $postsPerPage);
+            $selectedCategory = 'All';
     }
   ?>
 
 <div class="postsContainer__posts__categorieContainer">
-        <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Category :</label>
-        <select class="postsContainer__posts__categorieContainer__categorie" name="categorie" id="categorie" onchange="filterCategorie(this.value)">
-          <option value="all" <?php echo (!$selectedCategory || $selectedCategory === 'all') ? 'selected' : ''; ?>>All</option>
-          <option value="lifestyle" <?php echo ($selectedCategory === 'lifestyle') ? 'selected' : ''; ?>>lifestyle</option>
-          <option value="food" <?php echo ($selectedCategory === 'food') ? 'selected' : ''; ?>>food</option>
-          <option value="health" <?php echo ($selectedCategory === 'health') ? 'selected' : ''; ?>>health</option>
-          <option value="science" <?php echo ($selectedCategory === 'science') ? 'selected' : ''; ?>>science</option>
-        </select>
+        <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Category : <?php echo($selectedCategory); ?></label>
+
       </div>
   <div class="postsContainer">
     <main class="postsContainer__posts">
