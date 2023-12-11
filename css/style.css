@@ -64,20 +64,26 @@
   background-color: white;
   z-index: 5;
   margin: 0;
-  width: 193px;
+  width: 178px;
   left: 0%;
   top: 56px;
   position: absolute;
   padding: 0;
   list-style: none;
   border: 1px solid #482e21;
+  box-sizing: border-box;
 }
 .navContainer__nav__link__list__categorie {
   border-bottom: 1px solid #482e21;
-  padding: 10px;
-  color: #482e21;
+  padding: 0;
+  color: #754737;
 }
-.navContainer__nav__link__list__categorie:hover {
+.navContainer__nav__link__list__categorie__a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+.navContainer__nav__link__list__categorie__a:hover {
   background-color: #482e21;
   color: white;
 }
@@ -93,12 +99,11 @@
 .navContainer__nav__link:hover ul li a:hover {
   color: white;
 }
-.navContainer__nav__link a {
+.navContainer__nav__link__a {
   padding: 0px 30px;
   text-decoration: none;
-  color: white;
+  color: #754737;
   font-size: 15px;
-  color: #482e21;
   font-weight: lighter;
 }
 
@@ -557,7 +562,7 @@
 }
 .postsContainer__posts__categorieContainer__categorieLabel {
   padding-left: 15px;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   font-family: "Playfair Display", serif;
 }
@@ -567,7 +572,7 @@
   color: white;
   font-family: "Playfair Display", serif;
   margin: 5px;
-  font-size: 50px;
+  font-size: 40px;
   background-color: #482e21;
 }
 .postsContainer__posts__categorieContainer__categorie option {

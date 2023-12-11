@@ -59,21 +59,28 @@
             background-color: $text;
             z-index: 5;
             margin: 0;
-            width: 193px;
+            width: 178px;
             left: 0%;
             top: 56px;
             position: absolute;
             padding: 0;
             list-style: none;
             border: 1px solid $style;
+            box-sizing: border-box;
             &__categorie{
                 border-bottom: 1px solid $style;
-                padding:10px;
-                color:$style;
-                &:hover{
-                    background-color: $style;
-                    color:$text;
+                padding: 0;
+                color:$theme;
+                &__a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 10px;
+                    &:hover{
+                        background-color: $style;
+                        color:$text;
+                    }
                 }
+
             }   
         }
         &:hover{
@@ -92,12 +99,11 @@
                 }
             }
         }
-        a { 
+        &__a{ 
             padding: 0px 30px;
             text-decoration: none;
-            color: $text;
+            color: $theme;
             font-size: 15px;
-            color:$style;
             font-weight: lighter;
         }
     }

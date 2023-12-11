@@ -13,18 +13,18 @@
     <nav class="navContainer__nav">
         <hr>
         <ul>
-            <li class="navContainer__nav__link"><a href="index.php"><i class="fa-solid fa-house"></i> HOME</a></li>
-            <li class="navContainer__nav__link"><a href="blog.php"><i class="fa-solid fa-newspaper"></i>      BLOG</a></li>
-            <li id="categorieNav" class="navContainer__nav__link"><a href=""><i class="fa-solid fa-layer-group"></i>  CATEGORY  <i class="fa-solid fa-chevron-down"></i> </a>
+            <li class="navContainer__nav__link"><a class="navContainer__nav__link__a" href="index.php"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li class="navContainer__nav__link"><a class="navContainer__nav__link__a"  href="blog.php"><i class="fa-solid fa-newspaper"></i>      BLOG</a></li>
+            <li id="categorieNav" class="navContainer__nav__link"><a class="navContainer__nav__link__a"  href=""><i class="fa-solid fa-layer-group"></i>  CATEGORY  <i class="fa-solid fa-chevron-down"></i> </a>
                  <ul class="navContainer__nav__link__list">
-                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=lifestyle">Lifestyle</a></li>
-                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=health">Health</a></li>
-                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=food">Food</a></li>
-                    <li class="navContainer__nav__link__list__categorie"><a href="blog.php?categorie=science">Science</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a  class="navContainer__nav__link__list__categorie__a" href="blog.php?categorie=lifestyle">Lifestyle</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a class="navContainer__nav__link__list__categorie__a" href="blog.php?categorie=health">Health</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a class="navContainer__nav__link__list__categorie__a" href="blog.php?categorie=food">Food</a></li>
+                    <li class="navContainer__nav__link__list__categorie"><a class="navContainer__nav__link__list__categorie__a" href="blog.php?categorie=science">Science</a></li>
                  </ul>
             </li>
-            <li class="navContainer__nav__link"><a href="contact.php"><i class="fa-solid fa-address-book"></i>  CONTACT</a></li>
-            <li class="navContainer__nav__link special"><a href="about.php"><i class="fa-solid fa-circle-info"></i>  ABOUT</a></li>
+            <li class="navContainer__nav__link"><a class="navContainer__nav__link__a"  href="contact.php"><i class="fa-solid fa-address-book"></i>  CONTACT</a></li>
+            <li class="navContainer__nav__link special"><a class="navContainer__nav__link__a"  href="about.php"><i class="fa-solid fa-circle-info"></i>  ABOUT</a></li>
         </ul>
         <hr>
     </nav>
