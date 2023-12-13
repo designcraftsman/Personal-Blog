@@ -60,7 +60,12 @@
             $comments = $commentsStatement->fetchAll();     
         ?>
         <h2 class="articleContent__comments__title">Comments</h2>
-        <?php foreach($comments as $comment){?>
+        <br>
+        <?php
+            if(count($comments)==0){
+                echo('<h3 class="articleContent__comments__noComments">No comments yet</h3>');
+            }
+            foreach($comments as $comment){?>
         <div class="articleContent__comments__comment">
             <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <div class="articleContent__comments__comment__content">

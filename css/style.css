@@ -839,6 +839,9 @@
   line-height: 30px;
   word-spacing: 3px;
 }
+.articleContent__comments {
+  width: 100%;
+}
 .articleContent__comments__replyForm {
   margin: 0;
   padding: 0;
@@ -881,6 +884,10 @@
   margin: 5px;
   background-color: #482e21;
   color: white;
+}
+.articleContent__comments__noComments {
+  text-align: center;
+  color: gray;
 }
 .articleContent__comments__title {
   font-size: 25px;
