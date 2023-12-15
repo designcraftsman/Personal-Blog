@@ -29,14 +29,15 @@
             $displayPosts = isset($filteredPosts) ?
             array_slice($filteredPosts, $startIndex, $postsPerPage) :
             array_slice($allPosts, $startIndex, $postsPerPage);
+            $category = $selectedCategory;
     } else {
             $displayPosts = array_slice($allPosts, $startIndex, $postsPerPage);
-            $selectedCategory = 'All';
+            $category = 'All';
     }
   ?>
 
 <div class="postsContainer__posts__categorieContainer">
-        <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Category : <?php echo($selectedCategory); ?></label>
+        <label class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Category : <?php echo($category); ?></label>
 
       </div>
   <div class="postsContainer">

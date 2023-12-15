@@ -22,8 +22,8 @@
   color: #482e21;
 }
 .navContainer__navbar__search {
-  float: right;
   position: relative;
+  margin: 10px;
 }
 .navContainer__navbar__search__input {
   font-size: 18px;
@@ -50,8 +50,12 @@
   margin: 0;
   padding: 0;
 }
+.navContainer__nav ul {
+  margin: 0;
+  padding: 0;
+}
 .navContainer__nav__link {
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding: 18px 0px;
   position: relative;
