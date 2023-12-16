@@ -4,7 +4,15 @@
     include('navbar.php');
     include('connection.php');
     
-    $sqlQuery = 'SELECT * FROM posts';
+
+
+    if(isset($_GET['searchInput'])){
+      $search = $_GET['searchInput'];
+      $sqlQuery = 'SELECT * FROM posts WHERE postTitle LIKE "%' . $search . '%" OR postContent LIKE "%' . $search . '%"';
+    }
+    else{
+      $sqlQuery = 'SELECT * FROM posts';
+    }
     $postsStatement = $db->prepare($sqlQuery);
     $postsStatement->execute();
     $allPosts = $postsStatement->fetchAll();
@@ -16,7 +24,7 @@
             return $post['categorie'] === $selectedCategory;
         });
         $totalPosts = count($filteredPosts);
-    } else {
+    }else {
         $totalPosts = count($allPosts);
     }
     
