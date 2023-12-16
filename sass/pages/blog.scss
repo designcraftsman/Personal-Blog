@@ -5,30 +5,42 @@
     grid-gap: 10px;
     &__posts{
         &__categorieContainer{
-            background-color: $style;
-            text-align: center;
+            text-align: start;
             padding: 10px;
             border-bottom-left-radius: 20%;
             border-bottom-right-radius: 20%;
-        &__categorieLabel{
-            padding-left: 15px;
-            font-size: 40px;
-            color:$text;
-            font-family: 'Playfair Display', serif;
-        }
-        &__categorie{
-            
-            border-radius: 10px;
-            border: none;
-            color:$text;
-            font-family: 'Playfair Display', serif;
-           margin: 5px;
-            font-size: 40px;
-            background-color: $style;
-            option{
-                padding: 5px;
+            margin: 0 40px;
+            &__categorieLabel{
+                font-size: 20px;
+                color:gray;
+                margin: 10px 0;
+                font-family: 'Playfair Display', serif;
             }
-        }
+            &__search{
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row;
+                align-items: center;
+                width: 100%;
+                &__input{
+                    margin: 10px 0;
+                    padding: 12px;
+                    width: 80%;
+                    font-size: 15px;
+                    border-radius: 10px;
+                }
+                &__btn{
+                    padding: 11px;
+                    margin: 5px 0;
+                    width: 15%;
+                    background-color: $theme;
+                    border-radius: 10px;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 15px;
+                    color:$text;
+                }
+            }
+        
     }
         font-family: 'Playfair Display', serif;
         grid-column: span 2;
