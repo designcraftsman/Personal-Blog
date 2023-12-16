@@ -29,17 +29,19 @@
             font: inherit;
             cursor: pointer;
             outline: inherit;
-            top: 15px;
+            top: 14px;
             position: absolute;
-            right:60px;
+            right:45px;
             color:none;
         }
         position: relative;
         margin:10px;
         &__input{
+            border-radius: 10px;
             font-size: 18px;
             margin: 5px;
-            padding: 8px;
+            padding: 10px;
+            padding-right: 28px;
             width: 70%;
         }
     }

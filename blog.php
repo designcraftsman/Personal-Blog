@@ -49,10 +49,10 @@
     <main class="postsContainer__posts">
     <div class="postsContainer__posts__categorieContainer">
         <div class="postsContainer__posts__categorieContainer__categorieLabel" for="categorie">Category > <?php echo($category); ?></div>
-        <div lcass="postsContainer__posts__categorieContainer__search">
-          <input class="postsContainer__posts__categorieContainer__search__input" placeholder="Search stories, people or places..." type="text"></input>
+        <form lcass="postsContainer__posts__categorieContainer__search" methode="GET">
+          <input class="postsContainer__posts__categorieContainer__search__input" name="searchInput" placeholder="Search stories, people or places..." type="text"></input>
           <button class="postsContainer__posts__categorieContainer__search__btn"><i class="fa-solid fa-magnifying-glass fa navContainer__navbar__search__icon"></i> Search</button>
-        </div>
+        </form>
 </div>
       <?php foreach ($displayPosts as $post) {?>
         <article class="postsContainer__posts__post" onclick="postPage(<?php echo($post['idPost']);?>)">
