@@ -12,3 +12,21 @@
         }
     }
 }
+
+@media screen and (max-width:726px){
+    .postsContainer{
+        &__posts{
+            &__categorieContainer{
+                &__search{
+                    &__input{
+                        width: 100%;
+                    }
+                    &__btn{
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}

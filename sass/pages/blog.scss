@@ -8,7 +8,6 @@
             text-align: start;
             border-bottom-left-radius: 20%;
             border-bottom-right-radius: 20%;
-            margin: 0 40px;
             &__categorieLabel{
                 font-size: 20px;
                 color:gray;
@@ -16,32 +15,34 @@
                 font-family: 'Playfair Display', serif;
             }
             form{
-                margin:0;
+                margin: 5px 0;
                 padding: 0;
             }
             &__search{
                 display: flex;
                 justify-content: space-between;
-                flex-flow: row;
+                flex-flow: row wrap;
                 align-items: center;
                 width: 100%;
                 &__input{
-                    margin: 10px 0;
                     padding: 12px;
-                    width: 70%;
-                    font-size: 15px;
+                    width: 80%;
+                    margin: 10px 0;
+                    font-size: 20px;
                     border-radius: 10px;
                 }
                 &__btn{
                     padding: 11px;
-                    margin: 0 10px;
-                    width: 120px;
                     background-color: $theme;
-                    border-radius: 10px;
+                    border-radius: 10px; 
+                    width: 15%;
                     font-family: 'Playfair Display', serif;
-                    font-size: 15px;
+                    font-size: 18px;
                     color:$text;
                 }
+            }
+            hr{
+                margin: 20px 0;
             }
         
     }
@@ -50,7 +51,7 @@
         padding: 20px;
         &__post{
             cursor: pointer;
-            margin: 40px;
+            margin: 20px 0;
             height: max-content;
             display: flex;
             align-items: center;

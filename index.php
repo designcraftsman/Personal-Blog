@@ -9,10 +9,10 @@
     $date = date('y-m-d');
     $currentDate = new DateTime($date);
     $todayPosts = array_filter($posts,function($post)use($currentDate){
-            $postDate = new DateTime($post['postDate']);
-            $dateGap = $currentDate->diff($postDate);
-            $minutesGap = $dateGap->format('%i');
-            return $minutesGap <= 20160 ;
+    $postDate = new DateTime($post['postDate']);
+    $dateGap = $currentDate->diff($postDate);
+    $minutesGap = $dateGap->format('%i');
+    return $minutesGap <= 20160 ;
     }); 
     $TodayPosts = array_slice($todayPosts, 0, 3);
     $posts = array_slice($todayPosts, 0, 6)

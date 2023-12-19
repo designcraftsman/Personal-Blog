@@ -271,7 +271,7 @@
 }
 .container__left__info a {
   background-color: #482e21;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -318,7 +318,7 @@
 }
 .container__rightTop__info a {
   background-color: #482e21;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -357,7 +357,7 @@
 }
 .container__rightBottom__info a {
   background-color: #482e21;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -376,7 +376,7 @@
 #posts .title {
   margin-left: 3%;
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: lighter;
   border-radius: 4px;
   padding: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -576,7 +576,6 @@
   text-align: start;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
-  margin: 0 40px;
 }
 .postsContainer__posts__categorieContainer__categorieLabel {
   font-size: 20px;
@@ -585,36 +584,38 @@
   font-family: "Playfair Display", serif;
 }
 .postsContainer__posts__categorieContainer form {
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
 }
 .postsContainer__posts__categorieContainer__search {
   display: flex;
   justify-content: space-between;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-items: center;
   width: 100%;
 }
 .postsContainer__posts__categorieContainer__search__input {
-  margin: 10px 0;
   padding: 12px;
-  width: 70%;
-  font-size: 15px;
+  width: 80%;
+  margin: 10px 0;
+  font-size: 20px;
   border-radius: 10px;
 }
 .postsContainer__posts__categorieContainer__search__btn {
   padding: 11px;
-  margin: 0 10px;
-  width: 120px;
   background-color: #754737;
   border-radius: 10px;
+  width: 15%;
   font-family: "Playfair Display", serif;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
+}
+.postsContainer__posts__categorieContainer hr {
+  margin: 20px 0;
 }
 .postsContainer__posts__post {
   cursor: pointer;
-  margin: 40px;
+  margin: 20px 0;
   height: max-content;
   display: flex;
   align-items: center;
@@ -680,6 +681,14 @@
   .postsContainer__posts__img {
     width: 200px;
     height: 200px;
+  }
+}
+@media screen and (max-width: 726px) {
+  .postsContainer__posts__categorieContainer__search__input {
+    width: 100%;
+  }
+  .postsContainer__posts__categorieContainer__search__btn {
+    width: 100%;
   }
 }
 @media screen and (max-width: 756px) {
