@@ -152,8 +152,8 @@
   align-items: center;
 }
 .asideSection__recentPosts__post__img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
 }
 .asideSection__recentPosts__post__img img {
   border-radius: 10px;
@@ -174,12 +174,12 @@
 }
 .asideSection__recentPosts__post__content h3 {
   margin: 5px 0;
-  width: 200px;
+  width: 100%;
   font-weight: lighter;
 }
 .asideSection__recentPosts__post__content p {
   margin: 0;
-  width: 200px;
+  width: 100%;
 }
 .asideSection__categories {
   display: flex;
@@ -388,7 +388,7 @@
 #trendingPosts {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 50px;
 }
 
@@ -523,7 +523,7 @@
     width: 300px;
   }
 }
-@media screen and (min-width: 708px) and (max-width: 1090px) {
+@media screen and (min-width: 614px) and (max-width: 1090px) {
   .asideSection {
     grid-column: span 2;
   }
@@ -564,7 +564,7 @@
 .postsContainer {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
 }
 .postsContainer__posts {
