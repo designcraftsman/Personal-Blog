@@ -637,7 +637,7 @@
 }
 .postsContainer__posts__post__content a {
   background-color: #482e21;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -647,6 +647,7 @@
   font-size: x-large;
   max-width: 100%;
   max-height: 100%;
+  margin: 10px 0;
   overflow: hidden;
 }
 .postsContainer__posts__post__content p {
