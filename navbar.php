@@ -5,7 +5,9 @@
             <input type="text" placeholder="Search" name="searchInput" class="navContainer__navbar__search__input">
             <button class="navContainer__navbar__search__btn" type="submit"><i class="fa-solid fa-magnifying-glass fa navContainer__navbar__search__icon"></i></button>
         </form>
-        
+        <div class="navContainer__navbar__navIcon">
+        <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+        </div>
     </div>
 
     <nav class="navContainer__nav">
