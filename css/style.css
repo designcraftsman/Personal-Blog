@@ -210,30 +210,91 @@
 #footer {
   margin-top: 50px;
   background-color: #754737;
+  height: auto;
+  padding: 40px;
+}
+#footer hr {
+  width: 90%;
 }
 
 .footer {
   font-family: "Playfair Display", serif;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
-  padding: 20px;
+  align-items: start;
+  justify-content: space-around;
   flex-flow: row wrap;
+  padding: 20px;
+}
+.footer__socials {
+  margin: 20px;
+  text-align: center;
 }
 .footer__socials__title {
   text-align: center;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+  padding: 0;
 }
-.footer__socials ul {
+.footer__socials__title__style {
+  color: #482e21;
+}
+.footer__socials__ul {
+  list-style: none;
+  padding: 0;
+}
+.footer__socials__ul__link {
+  padding: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 5px;
+}
+.footer__socials__ul__link__a {
+  padding: 8px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+}
+.footer__socials__ul__link__a:hover {
+  background-color: white;
+  color: #482e21;
+}
+.footer__info {
+  align-self: start;
+  margin: 20px;
+  color: white;
+  text-align: start;
+}
+.footer__info__h2 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: rgb(220, 213, 213);
+}
+.footer__info__ul {
+  padding: 0;
+  margin: 10px 0;
   list-style: none;
 }
-.footer__socials ul li {
-  margin: 0px;
-  display: inline;
-  margin-right: 20px;
+.footer__info__ul__li {
+  margin: 10px 0;
 }
-.footer__about {
+.footer__info__ul__li a {
+  color: white;
+  text-decoration: none;
+}
+.footer__info__ul__li a:hover {
+  color: rgb(220, 213, 213);
+}
+
+.footer-about {
   text-align: center;
+  color: rgb(220, 213, 213);
+  padding: 10px;
+}
+.footer-about__p {
+  margin: 10px;
 }
 
 #home {

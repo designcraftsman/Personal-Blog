@@ -1,20 +1,33 @@
 <footer id="footer">
     <div class="footer">
         <div class="footer__socials">
-            <h2 class="footer__socials__title">Socials</h2>
-            <ul >
-                <li class="footer__socials__link"><a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a></li>
-                <li class="footer__socials__link"><a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a></li>
-                <li class="footer__socials__link"><a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a></li>
-                <li class="footer__socials__link"><a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a></li>
+            <h2 class="footer__socials__title">VAUL<span class="footer__socials__title__style">TIQ</span></h2>
+            <ul class="footer__socials__ul" >
+                <li class="footer__socials__ul__link"><a class="footer__socials__ul__link__a" href="#"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                <li class="footer__socials__ul__link"><a class="footer__socials__ul__link__a" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                <li class="footer__socials__ul__link"><a class="footer__socials__ul__link__a" href="#"><i class="fa-brands fa-linkedin fa-xl" ></i></a></li>
+                <li class="footer__socials__ul__link"><a class="footer__socials__ul__link__a" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
             </ul>
         </div>
-        <div class="footer__about"> 
-            <p >© 2023, Stories - Personal Blog HTML Template</p>
-            <p>Design by AliThemes | All rights reserved</p>
+        <div class="footer__info">
+            <h2 class="footer__info__h2">Ressources</h2>
+            <ul class="footer__info__ul">
+                <li class="footer__info__ul__li"><a href="#">Blog</a></li>
+                <li class="footer__info__ul__li"><a href="#">Help Center</a></li>
+            </ul>
         </div>
-            <div class="footer__contact">
-            <h2 class="footer__contact__h2">Contact Us</h2>
+        <div class="footer__info">
+            <h2 class="footer__info__h2">About Us</h2>
+            <ul class="footer__info__ul">
+                <li class="footer__info__ul__li"><a href="#">About Vaultiq</a></li>
+                <li class="footer__info__ul__li"><a href="#">Authors</a></li>
+                <li class="footer__info__ul__li"><a href="#">Contact Us</a></li>
+            </ul>
         </div>
     </div>
+    <hr>
+    <div class="footer-about"> 
+            <p class="footer-about__p" >© 2023, Stories - Personal Blog HTML Template</p>
+            <p class="footer-about__p">Developed by designCraftsMan | All rights reserved</p>
+        </div>
 </footer>

@@ -1,29 +1,89 @@
 #footer{
     margin-top: 50px;
     background-color: $theme;
+    height: auto;
+    hr{
+        width: 90%;
+    }
+    padding: 40px;
 }
 .footer{
     font-family: 'Playfair Display', serif;
     display:flex;
-    align-items: center;
-    justify-content:space-evenly;
-    color: $text;
-    padding: 20px;
+    align-items: start;
+    justify-content:space-around;
     flex-flow: row wrap;
+    padding: 20px;
     &__socials{
+        margin: 20px;
+        text-align: center;
         &__title{
             text-align: center;
+            font-size: 40px;
+            margin: 0;
+            color: $text;
+            padding: 0;
+            &__style{
+                color:$style;
+            }
         }
-     ul{
+     &__ul{
          list-style: none;
-         li{
-            margin: 0px;
-            display:inline;
-            margin-right: 20px;
+         padding: 0;
+         &__link{
+            padding: 0;
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 0 5px;
+            &__a{
+                padding: 8px;
+                display: inline-block;
+                border: 1px solid $text;
+                border-radius: 10px;
+                color: $text;
+                &:hover{
+                    background-color: $text;
+                    color: $style;
+                }
+            }
         }
     }
     }
-    &__about{
-        text-align: center;
+    &__info{
+        align-self: start;
+        margin: 20px;
+        color:$text;
+        text-align: start;
+        &__h2{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            color:rgb(220, 213, 213);
+        }
+        &__ul{
+            padding: 0;
+            margin:10px 0;
+            list-style: none;
+            &__li{
+                margin: 10px 0;
+                a{
+                    color: $text;
+                    text-decoration: none;
+                    &:hover{
+                        color:rgb(220, 213, 213);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer-about{
+    text-align: center;
+    color:rgb(220, 213, 213);
+    padding: 10px;
+    &__p{
+        margin:10px;
     }
 }
