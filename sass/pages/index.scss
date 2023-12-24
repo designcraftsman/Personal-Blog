@@ -8,7 +8,7 @@
     grid-template-columns: 49% 49%;
     grid-template-rows:35vh 35vh ;
     grid-gap: 15px;
-    font-family: $titleFont;
+    font-family: 'Playfair Display';
     padding: 10px 20px;
     &__left {
         grid-row: span 2;
@@ -46,10 +46,17 @@
             }
             &__additional{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: lighter;
                 margin: 5px;
-
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                padding: 5px;
+                align-items: center;
+                &__commentsIcon{
+                    color:$text;
+                }
             }
         }
     }
@@ -90,6 +97,7 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-size:large;
                 margin: 5px;
+                display: flex;
             }
         }
     }

@@ -19,12 +19,25 @@
 ?>
 <section id="home">
     <div class="container">
-        <article class="container__left" onclick="postPage(<?php echo($TodayPosts[0]['idPost']); ?> ) ">
+        <article class="container__left" onclick="postPage(<?php echo($TodayPosts[0]['idPost']);?> ) ">
             <img src="<?php echo($TodayPosts[0]['postImg']); ?>" alt="">
             <div class="container__left__info">
                 <a href="#"><?php echo($TodayPosts[0]['categorie']); ?></a>
                 <h2 class="container__left__info__title"><?php echo($TodayPosts[0]['postTitle']); ?></h2>
-                <p class="container__left__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[0]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
+                <div class="container__left__info__additional">
+                    <p ><?php $dateFormat = new DateTimeImmutable($TodayPosts[0]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
+                    <div class="container__left__info__additional__commentsIcon">
+                        <i class="fa-solid fa-comment" ></i>
+                        <?php
+                            $sqlQuery = 'SELECT * FROM comments where postId = :postId';
+                            $postsStatement = $db->prepare($sqlQuery);
+                            $postsStatement->bindParam(':postId', $TodayPosts[0]['idPost'] , PDO::PARAM_INT);
+                            $postsStatement->execute();
+                            $posts = $postsStatement->fetchAll();
+                            echo (count($posts));
+                        ?>
+                    </div>
+                </div>    
             </div>
         </article>
         <article class="container__rightTop" onclick="postPage(<?php echo($TodayPosts[1]['idPost']); ?> ) ">
@@ -32,7 +45,20 @@
             <div class="container__rightTop__info">
                 <a href="#"><?php echo($TodayPosts[1]['categorie']); ?></a>
                 <h2 class="container__rightTop__info__title"><?php echo($TodayPosts[1]['postTitle']); ?></h2>
-                <p class="container__rightTop__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[1]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
+                <div class="container__rightTop__info__additional">
+                    <p class="container__rightTop__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[1]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
+                    <div class="container__rightTop__info__additional__commentsIcon">
+                        <i class="fa-solid fa-comment" ></i>
+                        <?php
+                            $sqlQuery = 'SELECT * FROM comments where postId = :postId';
+                            $postsStatement = $db->prepare($sqlQuery);
+                            $postsStatement->bindParam(':postId', $TodayPosts[1]['idPost'] , PDO::PARAM_INT);
+                            $postsStatement->execute();
+                            $posts = $postsStatement->fetchAll();
+                            echo (count($posts));
+                        ?>
+                    </div>
+                </div>
             </div>    
         </article>
         <article class="container__rightBottom" onclick="postPage(<?php echo($TodayPosts[2]['idPost']); ?> ) ">
