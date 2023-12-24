@@ -24,7 +24,7 @@
             <div class="container__left__info">
                 <a href="#"><?php echo($TodayPosts[0]['categorie']); ?></a>
                 <h2 class="container__left__info__title"><?php echo($TodayPosts[0]['postTitle']); ?></h2>
-                <p class="container__left__info__additional"><?php echo($TodayPosts[0]['postDate']); ?></p>
+                <p class="container__left__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[0]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
             </div>
         </article>
         <article class="container__rightTop" onclick="postPage(<?php echo($TodayPosts[1]['idPost']); ?> ) ">
@@ -32,7 +32,7 @@
             <div class="container__rightTop__info">
                 <a href="#"><?php echo($TodayPosts[1]['categorie']); ?></a>
                 <h2 class="container__rightTop__info__title"><?php echo($TodayPosts[1]['postTitle']); ?></h2>
-                <p class="container__rightTop__info__additional"><?php echo($TodayPosts[1]['postDate']); ?></p>
+                <p class="container__rightTop__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[1]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
             </div>    
         </article>
         <article class="container__rightBottom" onclick="postPage(<?php echo($TodayPosts[2]['idPost']); ?> ) ">
@@ -40,7 +40,7 @@
             <div class="container__rightBottom__info">
                 <a href="#"><?php echo($TodayPosts[2]['categorie']); ?></a>
                 <h2 class="container__rightBottom__info__title"><?php echo($TodayPosts[2]['postTitle']); ?></h2>
-                <p class="container__rightBottom__info__additional"><?php echo($TodayPosts[2]['postDate']); ?></p>
+                <p class="container__rightBottom__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[2]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
             </div>
         </article>
     </div>
@@ -53,11 +53,13 @@
     <div id="trendingPosts">
     <div class="trendingPosts">
         <div class="trendingPosts__Posts">
-            <?php foreach($posts as $post){ ?>
+            <?php foreach($posts as $post){
+                $dateFormat = new DateTimeImmutable($post['postDate']);
+                ?>
                 <article class="trendingPosts__Posts__post"  onclick="postPage(<?php echo($post['idPost']); ?> ) " > 
                     <h3><?php echo($post['postTitle']); ?></h3>
                     <img src="<?php echo($post['postImg']); ?>" alt="">   
-                    <p class="trendingPosts__Posts__post__categorie"><a class="trendingPosts__Posts__post__categorie__select" href="blog.php?categorie=<?php echo urlencode($post['categorie']);?>"><?php echo($post['categorie']); ?></a> - Posted on <?php echo($post['postDate']); ?></p> 
+                    <p class="trendingPosts__Posts__post__categorie"><a class="trendingPosts__Posts__post__categorie__select" href="blog.php?categorie=<?php echo urlencode($post['categorie']);?>"><?php echo($post['categorie']); ?></a> - Posted on <?php echo($dateFormat->format('M d,Y')); ?></p> 
                     <p class="trendingPosts__Posts__post__p"><?php echo($post['postContent']); ?></p>    
                     <a class="trendingPosts__Posts__post__readMore" onclick="postPage(<?php echo($post['idPost']); ?> ) ">Read More</a>
                 </article>

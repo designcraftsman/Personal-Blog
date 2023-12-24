@@ -16,7 +16,7 @@
                 <div class="asideSection__recentPosts__post__content">
                     <a href="#"><?php echo($post['categorie']); ?></a>
                     <h3><?php echo($post['postTitle']); ?></h3>
-                    <p><?php echo($post['postDate']); ?></p>
+                    <p><?php $dateFormat = new DateTimeImmutable($post['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
                  </div>   
             </article>
             <?php $i+=1;

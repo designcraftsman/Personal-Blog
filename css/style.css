@@ -124,7 +124,6 @@
 }
 
 .asideSection {
-  font-family: "Playfair Display", serif;
   text-align: start;
   padding-left: 40px;
 }
@@ -133,7 +132,7 @@
   border-bottom: 3px solid #482e21;
   border-radius: 4px;
   padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: lighter;
   display: inline-block;
 }
@@ -167,18 +166,20 @@
 .asideSection__recentPosts__post__content a {
   background-color: #482e21;
   padding: 5px;
+  font-family: "Playfair Display", serif;
   border-radius: 10px;
   text-decoration: none;
   color: white;
   display: inline;
 }
 .asideSection__recentPosts__post__content h3 {
-  margin: 5px 0;
+  margin: 10px 0;
   width: 100%;
-  font-weight: lighter;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .asideSection__recentPosts__post__content p {
   margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
   width: 100%;
 }
 .asideSection__categories {
@@ -261,7 +262,6 @@
   color: #482e21;
 }
 .footer__info {
-  align-self: start;
   margin: 20px;
   color: white;
   text-align: start;
@@ -308,7 +308,6 @@
   grid-template-rows: 35vh 35vh;
   grid-gap: 15px;
   font-family: "Playfair Display";
-  font-weight: bolder;
   padding: 10px 20px;
 }
 .container__left {
@@ -348,7 +347,8 @@
 }
 .container__left__info__additional {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: lighter;
   margin: 5px;
 }
 .container__rightTop {
@@ -431,7 +431,6 @@
 }
 
 #posts {
-  margin-top: 30px;
   padding: 10px;
 }
 #posts .title {
@@ -440,7 +439,7 @@
   font-weight: lighter;
   border-radius: 4px;
   padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Playfair Display";
   color: black;
   border-bottom: 5px solid #482e21;
   display: inline-block;
@@ -454,7 +453,7 @@
 }
 
 .trendingPosts {
-  font-family: "Playfair Display", serif;
+  font-family: Helvetica, Arial, sans-serif;
   grid-column: span 2;
 }
 .trendingPosts__Posts {
@@ -472,11 +471,13 @@
   border-bottom-right-radius: 10px;
 }
 .trendingPosts__Posts__post__categorie {
+  font-family: Helvetica, Arial, sans-serif;
   margin: 10px 0;
 }
 .trendingPosts__Posts__post__categorie__select {
   background-color: #482e21;
   padding: 5px;
+  font-family: "Playfair Display", serif;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -488,7 +489,7 @@
   height: 400px;
 }
 .trendingPosts__Posts__post h3 {
-  font-size: x-large;
+  font-size: 20px;
   margin: 5px 0;
 }
 .trendingPosts__Posts__post__p {
@@ -910,8 +911,8 @@
 .postTitle {
   margin: 10px;
   margin-left: 35px;
-  font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-family: "Roboto", serif;
 }
 
 .articleContent {
@@ -933,17 +934,17 @@
 }
 .articleContent__categorie {
   background-color: #482e21;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 20px;
   margin: 10px 0;
   text-decoration: none;
   color: white;
   display: inline-block;
 }
 .articleContent__p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: x-large;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: large;
   line-height: 30px;
   word-spacing: 3px;
 }

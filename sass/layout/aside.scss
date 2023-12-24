@@ -1,5 +1,4 @@
 .asideSection {
-    font-family: 'Playfair Display', serif; 
     text-align: start;
     padding-left: 40px;
     &__title{
@@ -7,7 +6,7 @@
         border-bottom: 3px solid $style;
         border-radius: 4px;
         padding:10px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Playfair Display', serif; 
         font-weight: lighter;
         display: inline-block;
     }
@@ -38,18 +37,20 @@
                 a{
                 background-color: $style;
                 padding: 5px;
+                font-family: 'Playfair Display', serif; 
                 border-radius: 10px;
                 text-decoration: none;
                 color:$text;
                 display: inline;
                 }
                 h3{
-                    margin: 5px 0;
+                    margin: 10px 0;
                     width: 100%;
-                    font-weight: lighter;
+                    font-family: Helvetica,Arial, sans-serif; 
                 }
                 p{  
                     margin: 0;
+                    font-family: Helvetica,Arial, sans-serif; 
                     width: 100%;
                 }
             }

@@ -8,8 +8,8 @@
 .postTitle{
     margin: 10px;
     margin-left: 35px;
-    font-size: 50px;
-    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-family: 'Roboto', serif;
 }
 .articleContent{
     grid-column: span 2;
@@ -31,17 +31,17 @@
     }
     &__categorie{
         background-color: $style;
-        padding: 10px;
+        padding: 5px;
         border-radius: 10px;
-        font-size: 25px;
+        font-size: 20px;
         margin: 10px 0;
         text-decoration: none;
         color:$text;
         display: inline-block;
     }
     &__p{  
-        font-family:'Times New Roman', Times, serif;
-        font-size: x-large;
+        font-family: Helvetica,Arial, sans-serif; 
+        font-size: large;
         line-height: 30px;
         word-spacing: 3px;
     }
