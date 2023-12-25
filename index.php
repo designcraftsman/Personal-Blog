@@ -29,12 +29,12 @@
                     <div class="container__left__info__additional__commentsIcon">
                         <i class="fa-solid fa-comment" ></i>
                         <?php
-                            $sqlQuery = 'SELECT * FROM comments where postId = :postId';
-                            $postsStatement = $db->prepare($sqlQuery);
-                            $postsStatement->bindParam(':postId', $TodayPosts[0]['idPost'] , PDO::PARAM_INT);
-                            $postsStatement->execute();
-                            $posts = $postsStatement->fetchAll();
-                            echo (count($posts));
+                           $todayPostsSqlQuery = 'SELECT * FROM comments where postId = :postId';
+                           $todayPostsStatement = $db->prepare($todayPostsSqlQuery);
+                           $todayPostsStatement->bindParam(':postId', $TodayPosts[0]['idPost'] , PDO::PARAM_INT);
+                           $todayPostsStatement->execute();
+                           $todayPosts = $todayPostsStatement->fetchAll();
+                           echo (count($todayPosts));
                         ?>
                     </div>
                 </div>    
@@ -50,12 +50,12 @@
                     <div class="container__rightTop__info__additional__commentsIcon">
                         <i class="fa-solid fa-comment" ></i>
                         <?php
-                            $sqlQuery = 'SELECT * FROM comments where postId = :postId';
-                            $postsStatement = $db->prepare($sqlQuery);
-                            $postsStatement->bindParam(':postId', $TodayPosts[1]['idPost'] , PDO::PARAM_INT);
-                            $postsStatement->execute();
-                            $posts = $postsStatement->fetchAll();
-                            echo (count($posts));
+                            $todayPostsSqlQuery = 'SELECT * FROM comments where postId = :postId';
+                            $todayPostsStatement = $db->prepare($todayPostsSqlQuery);
+                            $todayPostsStatement->bindParam(':postId', $TodayPosts[1]['idPost'] , PDO::PARAM_INT);
+                            $todayPostsStatement->execute();
+                            $todayPosts = $todayPostsStatement->fetchAll();
+                            echo (count($todayPosts));
                         ?>
                     </div>
                 </div>
@@ -66,7 +66,20 @@
             <div class="container__rightBottom__info">
                 <a href="#"><?php echo($TodayPosts[2]['categorie']); ?></a>
                 <h2 class="container__rightBottom__info__title"><?php echo($TodayPosts[2]['postTitle']); ?></h2>
-                <p class="container__rightBottom__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[2]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
+                <div class="container__rightBottom__info__additional">
+                    <p class="container__rightBottom__info__additional"><?php $dateFormat = new DateTimeImmutable($TodayPosts[2]['postDate']); echo($dateFormat->format('M d,Y')); ?></p>
+                    <div class="container__rightTop__info__additional__commentsIcon">
+                        <i class="fa-solid fa-comment" ></i>
+                        <?php
+                            $todayPostsSqlQuery = 'SELECT * FROM comments where postId = :postId';
+                            $todayPostsStatement = $db->prepare($todayPostsSqlQuery);
+                            $todayPostsStatement->bindParam(':postId', $TodayPosts[2]['idPost'] , PDO::PARAM_INT);
+                            $todayPostsStatement->execute();
+                            $todayPosts = $todayPostsStatement->fetchAll();
+                            echo (count($todayPosts));
+                        ?>
+                    </div> 
+                </div>
             </div>
         </article>
     </div>
@@ -87,7 +100,20 @@
                     <img src="<?php echo($post['postImg']); ?>" alt="">   
                     <p class="trendingPosts__Posts__post__categorie"><a class="trendingPosts__Posts__post__categorie__select" href="blog.php?categorie=<?php echo urlencode($post['categorie']);?>"><?php echo($post['categorie']); ?></a> - Posted on <?php echo($dateFormat->format('M d,Y')); ?></p> 
                     <p class="trendingPosts__Posts__post__p"><?php echo($post['postContent']); ?></p>    
-                    <a class="trendingPosts__Posts__post__readMore" onclick="postPage(<?php echo($post['idPost']); ?> ) ">Read More</a>
+                    <div class="trendingPosts__Posts__post__additional">
+                        <a class="trendingPosts__Posts__post__additional__readMore" onclick="postPage(<?php echo($post['idPost']); ?> ) ">Read More</a>
+                        <div class="trendingPosts__Posts__post__additional__icon">
+                            <i class="fa-solid fa-comment fa"></i>
+                            <?php 
+                                $todayPostsSqlQuery = 'SELECT * FROM comments where postId = :postId';
+                                $todayPostsStatement = $db->prepare($todayPostsSqlQuery);
+                                $todayPostsStatement->bindParam(':postId', $post['idPost'] , PDO::PARAM_INT);
+                                $todayPostsStatement->execute();
+                                $todayPosts = $todayPostsStatement->fetchAll();
+                                echo (count($todayPosts));
+                            ?>
+                        </div>
+                    </div>
                 </article>
             <?php } ?>
         </div>

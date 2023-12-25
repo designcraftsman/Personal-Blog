@@ -1,5 +1,6 @@
-@media  screen and (max-width:1024px){
+@media  screen and (max-width:1157px){
     .asideSection{
+        grid-column: span 2;
         &__categories{
             justify-content: center;
         }
