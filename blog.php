@@ -8,10 +8,10 @@
 
     if(isset($_GET['searchInput'])){
       $search = $_GET['searchInput'];
-      $sqlQuery = 'SELECT * FROM posts WHERE postTitle LIKE "%' . $search . '%" OR postContent LIKE "%' . $search . '%"';
+      $sqlQuery = 'SELECT * FROM posts WHERE postTitle LIKE "%' . $search . '%" OR postContent LIKE "%' . $search . '%" order by postDate DESC';
     }
     else{
-      $sqlQuery = 'SELECT * FROM posts';
+      $sqlQuery = 'SELECT * FROM posts order by postDate DESC';
     }
     $postsStatement = $db->prepare($sqlQuery);
     $postsStatement->execute();
@@ -61,8 +61,8 @@
             <img src="<?php echo $post['postImg']; ?>" alt="">
           </div>
           <div class="postsContainer__posts__post__content">
-            <a href="#"><?php echo $post['categorie']; ?></a>
             <h3><?php echo $post['postTitle']; ?></h3>
+            <p><a href="#"><?php echo $post['categorie']; ?></a> - <?php $dateFormat = new DateTimeImmutable($post['postDate']); echo($dateFormat->format('M d,Y'));  ?></p>
             <p><?php echo $post['postContent']; ?></p>
           </div>
         </article>

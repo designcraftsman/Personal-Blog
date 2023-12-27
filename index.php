@@ -9,13 +9,18 @@
     $date = date('y-m-d');
     $currentDate = new DateTime($date);
     $todayPosts = array_filter($posts,function($post)use($currentDate){
-    $postDate = new DateTime($post['postDate']);
-    $dateGap = $currentDate->diff($postDate);
-    $minutesGap = $dateGap->format('%i');
-    return $minutesGap <= 20160 ;
+        $postDate = new DateTime($post['postDate']);
+        $dateGap = $currentDate->diff($postDate);
+        $daysGap = $dateGap->days;  // Get the difference in days instead of minutes
+        return $daysGap <= 7;
     }); 
     $TodayPosts = array_slice($todayPosts, 0, 3);
-    $posts = array_slice($todayPosts, 0, 6)
+
+    $sqlQuery = 'SELECT * FROM posts order by postViews DESC';
+    $postsStatement = $db->prepare($sqlQuery);
+    $postsStatement->execute();
+    $trendingPosts = $postsStatement->fetchAll();
+    $trendingPosts = array_slice($trendingPosts, 0, 6);
 ?>
 <section id="home">
     <div class="container">
@@ -92,7 +97,7 @@
     <div id="trendingPosts">
     <div class="trendingPosts">
         <div class="trendingPosts__Posts">
-            <?php foreach($posts as $post){
+            <?php foreach($trendingPosts as $post){
                 $dateFormat = new DateTimeImmutable($post['postDate']);
                 ?>
                 <article class="trendingPosts__Posts__post"  onclick="postPage(<?php echo($post['idPost']); ?> ) " > 
