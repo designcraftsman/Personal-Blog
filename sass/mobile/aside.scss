@@ -6,3 +6,19 @@
         }
     }
 }
+
+
+@media screen and (min-width: 620px) and (max-width: 1157px){
+    .asideSection{
+        &__recentPosts{
+            &__post{
+                width: 50%;
+            }
+        }
+        &__categories{
+            &__categorie{
+                width: 48%;
+            }
+        }
+    }
+}

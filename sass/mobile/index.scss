@@ -14,15 +14,16 @@
     #trendingPosts{
         grid-gap:0;
     }
+}
+@media  screen and (max-width:770px){
     .trendingPosts{
         &__Posts{
             &__post{
-                width: 300px;
+                width: 100%;
             }
         }
     }
 }
-
 
 @media screen and (max-width: 900px){
     .container{
