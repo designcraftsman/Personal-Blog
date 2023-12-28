@@ -23,9 +23,9 @@
         &__info{
             position:absolute;
             bottom: 0;
-            padding: 0 10px;
             color: $text2; 
-            width: 100%;
+            width: 95%;
+            margin: 10px;
             a {
             
                 background-color: $style;
@@ -73,9 +73,9 @@
         &__info{
             position:absolute;
             bottom: 0;
-            padding: 0 10px;
             color: $text2; 
-            width: 100%;
+            width: 95%;
+            margin: 10px;
             &__title{
                 color: $text2;
                 font-size:  25px;
@@ -121,8 +121,8 @@
             position:absolute;
             bottom: 0;
             color: $text2; 
-            width: 100%;
-            padding: 0 10px;
+            width: 95%;
+            margin: 10px;
             &__title{
                 color: $text2;
                 font-size:  25px;
