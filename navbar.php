@@ -2,11 +2,14 @@
     <div class="navContainer__navbar">
         <h1  class="navContainer__navbar__logo"><span class="navContainer__navbar__logo__style">VAUl</span>TIQ</h1>
         <form class="navContainer__navbar__search" action="blog.php" methode="GET">
+            <i class="fa-brands fa-facebook-f fa-lg navContainer__navbar__search__icon" ></i>
+            <i class="fa-brands fa-instagram fa-lg navContainer__navbar__search__icon" ></i>
+            <i  class="fa-brands fa-twitter fa-lg navContainer__navbar__search__icon"></i>
             <input type="text" placeholder="Search" name="searchInput" class="navContainer__navbar__search__input">
-            <button class="navContainer__navbar__search__btn" type="submit"><i class="fa-solid fa-magnifying-glass fa navContainer__navbar__search__icon"></i></button>
+            <button class="navContainer__navbar__search__btn" type="submit"><i class="fa-solid fa-magnifying-glass  navContainer__navbar__search__icon fa-lg"></i></button>
         </form>
         <div class="navContainer__navbar__navIcon">
-        <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
         </div>
     </div>
 

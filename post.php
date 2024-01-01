@@ -67,14 +67,12 @@
             }
             foreach($comments as $comment){?>
         <div class="articleContent__comments__comment">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <div class="articleContent__comments__comment__content">
                 <?php
                     $date = new DateTime($comment['commentDate']);
                     $formattedDate = $date->format('F d, Y');
                     
                 ?>
-                <p class="articleContent__comments__comment__content__p"><?php echo($comment['commentMessage']); ?></p>
                 <div class="articleContent__comments__comment__content__info">
                     <div class="articleContent__comments__comment__content__info__about">
                         <h3 class="articleContent__comments__comment__content__info__about__user"><?php echo($comment['memberName']); ?></h3>
@@ -84,6 +82,7 @@
                         <a class="articleContent__comments__comment__content__info__reply__btn" href="#">Reply</a>
                     </div>  
                 </div>
+                <p class="articleContent__comments__comment__content__p"><?php echo($comment['commentMessage']); ?></p>
             </div>
         </div>
         <?php }?>

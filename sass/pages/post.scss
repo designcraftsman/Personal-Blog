@@ -128,11 +128,12 @@
                     justify-content:space-between;
                     &__about{
                          &__user{
-                            display: inline-block;
-                            margin: 5px;
+                            text-transform: uppercase;
+                            margin: 0;
                         }
                         &__date{
-                            display: inline-block;
+                            color: gray;
+                            margin: 5px 0;
                         }
                     }
                 &__reply{

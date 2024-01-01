@@ -30,8 +30,8 @@
             <div class="asideSection__categories__categorie">
                 <a href="blog.php?categorie=food">
                     <div class="asideSection__categories__categorie__title">
-                        <h3 class="asideSection__categories__categorie__title__name">Food</h3>
-                        <p class="asideSection__categories__categorie__title__number">44</p>
+                        <h3 class="asideSection__categories__categorie__title__name">Food</h3>   
+                        <p class="asideSection__categories__categorie__title__number">453</p>
                     </div>
                     <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 </a>
